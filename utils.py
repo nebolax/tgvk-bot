@@ -13,6 +13,12 @@ def dict_to_str(data, tabs=0):
         for key, val in data.items():
             s += ' '*tabs + key + ': ' + dict_to_str(val, tabs=tabs+2) + '\n'
         
+        return s[:-1] + ' }'
+    
+    elif type(data) == list:
+        s = '\n'
+        for el in data:
+            s += ' '*tabs + '{ ' + dict_to_str(el, tabs+2) + ' }\n'
         return s[:-1]
     else:
         return str(data)

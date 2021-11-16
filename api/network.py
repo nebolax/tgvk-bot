@@ -1,26 +1,31 @@
 import requests
+from api.vk_api import person_name
 import config
-import utils
 from threading import Thread, Lock
 import g
+from utils import dict_to_str
 
 mutex = Lock()
 
 
-def _tg_method(method: str, data: dict = {}):
-    res = requests.post(config.tokenized_tg_url + method, json=data)
-    return res.json()
+def _tg_method(method: str, params: dict = {}):
+    resp = requests.post(config.tokenized_tg_url + method, json=params).json()
+    if not resp['ok']:
+        g.logs.error('Tg-method failed')
+    return resp
 
 
-def _vk_method(method: str, data: dict = {}):
+def _vk_method(method: str, params: dict = {}):
     params_str = 'access_token=' + config.vk_token + '&v=5.131&'
-    params_str += '&'.join([key+'='+str(val) for key, val in data.items()])
-    response = requests.get(config.base_vk_url + method + '/?' + params_str)
-    return response.json()
+    params_str += '&'.join([key+'='+str(val) for key, val in params.items()])
+    resp = requests.get(config.base_vk_url + method + '/?' + params_str).json()
+    if 'error' in resp:
+        g.logs.error(f'Vk-method failed!! Response: {resp}')
+    return resp
 
 
 def _tg_longpoll():
-    updates_offset = 0
+    updates_offset = g.state_val('tg_offset')
     while True:
         response = _tg_method('getUpdates', {
             'offset': updates_offset
@@ -31,10 +36,9 @@ def _tg_longpoll():
 
         updates = response['result']
         for update in updates:
-            g.logs.debug("Got update: " + utils.dict_to_str(update))
-            _single_tg_update(update)
-
             updates_offset = update['update_id'] + 1
+            g.update_state(tg_offset = updates_offset)
+            _single_tg_update(update)
 
 
 def _init_vklongpoll():
@@ -53,7 +57,6 @@ def _vk_longpoll(server, key, ts):
 
         ts = resp['ts']
         for update in resp['updates']:
-            g.logs.debug("Got vk update: " + utils.dict_to_str(update))
             _single_vk_update(update)
 
 def _init():
@@ -65,7 +68,6 @@ def _init():
     tg_thread.start()
 
     g.logs.debug("network initialized")
-_init()
 
 ##################################################################
 # Lower we are processing incoming updates and emit correscponding events
@@ -81,14 +83,14 @@ def _single_vk_update(update: list):
             _throwEvent("vk.msg", update[1:])
 
 
+
 def _single_tg_update(update: dict):
     if len(update.keys()) > 2:
         g.logs.critical("Tg can have more than 2 keys!: " + str(update.keys()))
 
     match(list(update.keys())[1]):
         case 'message':
-            g.logs.debug('Sending message event')
             _throwEvent("tg.msg", update['message'])
 
-        case _:
-            g.logs.info("Incoming tg update didn't match any case")
+##########################################################3
+_init()

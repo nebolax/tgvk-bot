@@ -1,18 +1,28 @@
 import g
-from network import send_tg_message
+import api
+
 
 def exec_tg_command(cmd: str, text: str, message: dict):
     t, s_peer = text.split()
     vk_peer = int(s_peer)
-    if t == 'g':
-        vk_peer += 2000000000
+    match(t):
+        case 'p':
+            pass
+        case 'g':
+            vk_peer += 2000000000
+        case 'c':
+            vk_peer *= -1
+        case _:
+            g.logs.warning(
+                f'Got unsupported chat type in command {cmd} of message {message}')
+            raise Exception()
     match(cmd):
         case '/vkpeer':
-            g.add_road(vk_peer, int(message['chat']['id']))
+            g.add_route(int(message['chat']['id']), vk_peer)
+
 
 @g.ee.on('tg.msg')
 def proc_tg_message(message: dict):
-    g.logs.debug("Catched message event")
     if 'entities' in message:
         for entity in message['entities']:
             if entity['type'] == 'bot_command':
@@ -21,11 +31,15 @@ def proc_tg_message(message: dict):
                 else:
                     cmd = message['text'][:entity['length']]
                     text = message['text'][entity['length']:].strip()
-                    exec_tg_command(cmd, text, message)
+                    try:
+                        exec_tg_command(cmd, text, message)
+                    except:
+                        g.logs.warning(
+                            f'Command {cmd} of message {message} failed!')
+                        api.send_tg_message(message['chat']['id'],
+                                            message='Your last command has failed')
     else:
-        if message['chat']['id'] not in g.tg_roads:
-            print('This chat peer is not specified')
+        if g.tg_route(message['chat']['id']) is None:
             return
-        vk_chat_peer = g.tg_roads[message['chat']['id']]
-        message_to_vk(vk_chat_peer, message['text'])
-        send_tg_message(message['chat']['id'], message['text'])
+        vk_chat_peer = g.tg_route(message['chat']['id'])
+        api.send_vk_message(vk_chat_peer, message=message['text'])
