@@ -18,7 +18,7 @@ def exec_tg_command(cmd: str, text: str, message: dict):
             raise Exception()
     match(cmd):
         case '/vkpeer':
-            g.add_route(int(message['chat']['id']), vk_peer)
+            g.set_route(int(message['chat']['id']), vk_peer)
 
 
 @g.ee.on('tg.msg')
@@ -33,9 +33,9 @@ def proc_tg_message(message: dict):
                     text = message['text'][entity['length']:].strip()
                     try:
                         exec_tg_command(cmd, text, message)
-                    except:
+                    except Exception as e:
                         g.logs.warning(
-                            f'Command {cmd} of message {message} failed!')
+                            f'Command {cmd} of message  failed! {message}\n Exception: {e}')
                         api.send_tg_message(message['chat']['id'],
                                             message='Your last command has failed')
     else:

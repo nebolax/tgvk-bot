@@ -22,7 +22,7 @@ my_vkid = 272986958
 
 _state: dict
 # first - tg_chat_id, second - vk_peer
-_routes = []
+_routes: list
 
 
 class RouteType(enum.Enum):
@@ -37,7 +37,10 @@ with open('state.json') as f:
     logs.debug(f'Loaded roads: {_routes}')
 
 
-def add_route(tg_chat_id: int, vk_peer: int):
+def set_route(tg_chat_id: int, vk_peer: int):
+    for i in range(len(_routes)):
+        if _routes[i][0] == tg_chat_id:
+            del _routes[i]
     _routes.append((tg_chat_id, vk_peer))
     update_state(routes=_routes)
     logs.debug(
