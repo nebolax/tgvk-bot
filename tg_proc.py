@@ -1,6 +1,6 @@
 import g
 import api
-
+import utils
 
 def exec_tg_command(cmd: str, text: str, message: dict):
     t, s_peer = text.split()
@@ -22,6 +22,7 @@ def exec_tg_command(cmd: str, text: str, message: dict):
 
 
 @g.ee.on('tg.msg')
+@utils.tryexcept
 def proc_tg_message(message: dict):
     if 'entities' in message:
         for entity in message['entities']:
@@ -41,5 +42,8 @@ def proc_tg_message(message: dict):
     else:
         if g.tg_route(message['chat']['id']) is None:
             return
-        vk_chat_peer = g.tg_route(message['chat']['id'])
-        api.send_vk_message(vk_chat_peer, message=message['text'])
+        try:
+            vk_chat_peer = g.tg_route(message['chat']['id'])
+            api.send_vk_message(vk_chat_peer, message=message['text'])
+        except Exception as e:
+            api.send_tg_message(message['chat']['id'], text='Cant process last message')

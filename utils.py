@@ -1,3 +1,5 @@
+import g
+
 class Singleton(type):
     def __init__(self, *args, **kwargs):
         super(Singleton, self).__init__(*args, **kwargs)
@@ -22,3 +24,11 @@ def dict_to_str(data, tabs=0):
         return s[:-1]
     else:
         return str(data)
+
+def tryexcept(func, *args, **kwargs):
+    def wrapper(*args, **kwargs):
+        try:
+            func(*args, **kwargs)
+        except Exception as e:
+            g.logs.error(f'Totally failed to process message {e}')
+    return wrapper
