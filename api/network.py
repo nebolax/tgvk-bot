@@ -31,7 +31,8 @@ def _tg_longpoll():
             'offset': updates_offset
         })
         if not response['ok']:
-            g.logs.error("Failed to fetch telegram")
+            g.logs.critical(f"Failed to fetch telegram: {response}")
+            input()
             continue
 
         updates = response['result']
@@ -52,7 +53,8 @@ def _vk_longpoll(server, key, ts):
 
         resp = requests.get(req_str).json()
         if 'failed' in resp:
-            g.logs.error("Failed to fetch vk")
+            g.logs.critical(f"Failed to fetch vk: {resp}")
+            input()
             continue
 
         ts = resp['ts']
