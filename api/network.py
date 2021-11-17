@@ -53,6 +53,9 @@ def _vk_longpoll(server, key, ts):
 
         resp = requests.get(req_str).json()
         if 'failed' in resp:
+            if resp['failed'] == 2:
+                server, key, ts = _init_vklongpoll()
+                g.logs.info('Renewed vk_longpoll key')
             g.logs.critical(f"Failed to fetch vk: {resp}")
             input()
             continue
@@ -68,6 +71,12 @@ def _init():
 
     tg_thread = Thread(target=_tg_longpoll)
     tg_thread.start()
+
+    # resp = _vk_method('messages.getHistoryAttachments', {
+    #     'peer_id': 2000000173,
+    #     'media_type': 'photo'
+    # })
+    # g.logs.debug(resp)
 
     g.logs.debug("network initialized")
 
