@@ -1,9 +1,10 @@
-import g
+import g, utils
 import api
 import os
 
 
 @g.ee.on('vk.msg')
+@utils.tryexcept
 def single_vk_update(update: list):
     g.logs.debug(update)
     if g.vk_route(update[2]) is None:
