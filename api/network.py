@@ -32,7 +32,6 @@ def _tg_longpoll():
         })
         if not response['ok']:
             g.logs.critical(f"Failed to fetch telegram: {response}")
-            input()
             continue
 
         updates = response['result']
@@ -56,8 +55,8 @@ def _vk_longpoll(server, key, ts):
             if resp['failed'] == 2:
                 server, key, ts = _init_vklongpoll()
                 g.logs.info('Renewed vk_longpoll key')
-            g.logs.critical(f"Failed to fetch vk: {resp}")
-            input()
+            else:
+                g.logs.critical(f"Failed to fetch vk: {resp}")
             continue
 
         ts = resp['ts']
