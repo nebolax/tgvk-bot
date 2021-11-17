@@ -39,6 +39,11 @@ def proc_tg_message(message: dict):
                             f'Command {cmd} of message  failed! {message}\n Exception: {e}')
                         api.send_tg_message(message['chat']['id'],
                                             text='Your last command has failed')
+    elif 'photo' in message:
+        g.logs.debug(message['photo'])
+        photo_path = api.get_tg_photo_link(message['photo'])
+        g.logs.debug(photo_path)
+
     else:
         if g.tg_route(message['chat']['id']) is None:
             return

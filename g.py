@@ -9,10 +9,10 @@ logs.setLevel(logging.DEBUG)
 stream_handler = logging.StreamHandler()
 file_handler = logging.FileHandler('otp.md', 'wt')
 stream_handler.setFormatter(logging.Formatter(
-    f"%(levelname)s:%(filename)s.%(funcName)s - %(message)s"
+    f"%(levelname)s:%(filename)s.%(funcName)s.%(lineno)d - %(message)s"
 ))
 file_handler.setFormatter(logging.Formatter(
-    f"%(levelname)s:%(filename)s.%(funcName)s - %(message)s"
+    f"%(levelname)s:%(filename)s.%(funcName)s.%(lineno)d - %(message)s"
 ))
 logs.addHandler(stream_handler)
 logs.addHandler(file_handler)
