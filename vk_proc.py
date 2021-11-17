@@ -12,7 +12,7 @@ def single_vk_update(update: list):
     vk_peer = update[2]
     text = update[5]
     extra_info = update[6]
-    sender_id = vk_peer if g.chat_type(vk_peer) == g.RouteType.personal else int(extra_info['from'])
+    sender_id = vk_peer if g.chat_type(vk_peer) != g.RouteType.group else int(extra_info['from'])
 
     if sender_id == g.my_vkid:
         g.logs.debug('Got vk message from me')

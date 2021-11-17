@@ -37,7 +37,7 @@ def proc_tg_message(message: dict):
                         g.logs.warning(
                             f'Command {cmd} of message  failed! {message}\n Exception: {e}')
                         api.send_tg_message(message['chat']['id'],
-                                            message='Your last command has failed')
+                                            text='Your last command has failed')
     else:
         if g.tg_route(message['chat']['id']) is None:
             return
