@@ -44,6 +44,6 @@ def proc_tg_message(message: dict):
             return
         try:
             vk_chat_peer = g.tg_route(message['chat']['id'])
-            api.send_vk_message(vk_chat_peer, message=message['text'])
+            api.send_vk_message(vk_chat_peer, {'message': message['text']})
         except Exception as e:
             api.send_tg_message(message['chat']['id'], text='Cant process last message')

@@ -11,7 +11,7 @@ mutex = Lock()
 def _tg_method(method: str, params: dict = {}):
     resp = requests.post(config.tokenized_tg_url + method, json=params).json()
     if not resp['ok']:
-        g.logs.error('Tg-method failed')
+        g.logs.error(f'Tg-method {method} failed. Params: {params}, Response: {resp}')
     return resp
 
 
@@ -71,12 +71,6 @@ def _init():
 
     tg_thread = Thread(target=_tg_longpoll)
     tg_thread.start()
-
-    # resp = _vk_method('messages.getHistoryAttachments', {
-    #     'peer_id': 2000000173,
-    #     'media_type': 'photo'
-    # })
-    # g.logs.debug(resp)
 
     g.logs.debug("network initialized")
 
