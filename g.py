@@ -15,6 +15,7 @@ file_handler.setFormatter(logging.Formatter(
     f"%(levelname)s:%(filename)s.%(funcName)s - %(message)s"
 ))
 logs.addHandler(stream_handler)
+logs.addHandler(file_handler)
 
 ee = pymitter.EventEmitter()
 
