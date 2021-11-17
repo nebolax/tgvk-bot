@@ -24,5 +24,3 @@ def single_vk_update(update: list):
     api.send_tg_message(g.vk_route(vk_peer),
                         text=f'<b>{api.person_name(sender_id)}:</b>\n' + text
                         )
-
-#        11
