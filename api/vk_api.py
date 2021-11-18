@@ -1,31 +1,28 @@
 from . import network as net
-import g
 import random
-import requests
-import os
 
 
-def send_vk_message(peer_id: int, params: dict):
+def send_vk_message(peer_id: int, user_tgid: int, params: dict):
     params['peer_id'] = peer_id
     params['random_id'] = random.getrandbits(31) * random.choice([-1, 1])
-    net._vk_method('messages.send', params)
+    net._vk_method('messages.send', user_tgid, params)
 
 
-def person_name(vk_id: int):
+def person_name(vk_id: int, user_tgid: int):
     # Person can be a human or community
     if vk_id > 0:
-        resp = net._vk_method('users.get', {
+        resp = net._vk_method('users.get', user_tgid, {
             'user_ids': vk_id
         })['response'][0]
         return resp['first_name'] + ' ' + resp['last_name']
     else:
-        return net._vk_method('groups.getById', {
+        return net._vk_method('groups.getById', user_tgid, {
             'group_ids': -vk_id
         })['response'][0]['name']
 
 
-def message_attachments(message_id: int):
-    resp = net._vk_method('messages.getById', {
+def message_attachments(message_id: int, user_tgid: int):
+    resp = net._vk_method('messages.getById', user_tgid, {
         'message_ids': message_id
     })
     if resp['response']['items'] == []:

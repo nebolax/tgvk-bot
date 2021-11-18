@@ -1,5 +1,6 @@
 import json
 import logging
+from typing import Callable
 import pymitter
 import enum
 
@@ -21,9 +22,12 @@ ee = pymitter.EventEmitter()
 
 my_vkid = 272986958
 
-_state: dict
+
+
+
+
+state: ObservableDict
 # first - tg_chat_id, second - vk_peer
-_routes: list
 
 
 class RouteType(enum.Enum):
@@ -32,24 +36,27 @@ class RouteType(enum.Enum):
     community = 2
 
 
+def _update_dict(full, nkey, nval):
+    with open('state.json', 'w') as f:
+        f.write(json.dumps(full))
+
+
 with open('state.json') as f:
-    _state = json.loads(f.read())
-    _routes = _state['routes']
-    logs.debug(f'Loaded roads: {_routes}')
+    state = ObservableDict(_update_dict, json.loads(f.read()))
+    logs.debug(f"Loaded routes: {state['routes']}")
 
 
 def set_route(tg_chat_id: int, vk_peer: int):
-    for i in range(len(_routes)):
-        if _routes[i][0] == tg_chat_id:
-            del _routes[i]
-    _routes.append((tg_chat_id, vk_peer))
-    update_state(routes=_routes)
+    for i in range(len(state['routes'])):
+        if state['routes'][i][0] == tg_chat_id:
+            del state['routes'][i]
+    state['routes'].append((tg_chat_id, vk_peer))
     logs.debug(
         f"Added road: vk_peer {vk_peer} is now connected to {tg_chat_id} telegram chat)")
 
 
 def vk_route(vk_peer: int) -> int:
-    for route in _routes:
+    for route in state['routes']:
         if route[1] == vk_peer:
             return route[0]
     logs.warning(f'Failed to find route for vk chat with peer {vk_peer}')
@@ -57,7 +64,7 @@ def vk_route(vk_peer: int) -> int:
 
 
 def tg_route(tg_chat_id: int) -> int:
-    for route in _routes:
+    for route in state['routes']:
         if route[0] == tg_chat_id:
             return route[1]
     logs.warning(f'Failed to find route for tg chat with id {tg_chat_id}')
@@ -71,14 +78,3 @@ def chat_type(vk_peer: int):
         return RouteType.community
     else:
         return RouteType.personal
-
-
-def update_state(**kwargs):
-    for key, val in kwargs.items():
-        _state[key] = val
-
-    with open('state.json', 'w') as f:
-        f.write(json.dumps(_state))
-
-def state_val(name: str):
-    return _state[name]
