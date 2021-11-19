@@ -1,6 +1,9 @@
+import json
+
 base_tg_url = 'https://api.telegram.org/'
 base_vk_url = 'https://api.vk.com/method/'
-bot_token = 'bot2146919352:AAF9BLnbGi2FOnFJU8JEw-nydEUjgBHJiBE/'
+with open('json/confidential.json') as f:
+    bot_token = json.loads(f.read())['bot_token']
 
 welcome_message = '''
     Привет!

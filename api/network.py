@@ -6,6 +6,8 @@ mutex = Lock()
 
 
 def _tg_method(method: str, params: dict = {}):
+    if method != 'getUpdates':
+        g.logs.debug(f'TG-method: {method}, --- {params}')
     resp = requests.post(g.base_tg_url + g.bot_token + method, json=params).json()
     if not resp['ok']:
         g.logs.error(f'Tg-method {method} failed. Params: {params}, Response: {resp}')
@@ -14,6 +16,7 @@ def _tg_method(method: str, params: dict = {}):
 
 
 def _vk_method(method: str, user_tgid: int, params: dict = {}):
+    g.logs.debug(f'VK-method: {method}, --- {user_tgid}, --- {params}')
     vktoken = store.user_by_tgid(user_tgid)['vktoken']
     params_str = 'access_token=' + vktoken + '&v=5.131&'
     params_str += '&'.join([key+'='+str(val) for key, val in params.items()])
@@ -49,6 +52,7 @@ def _init_vklongpoll(user_tgid: int):
 def _vk_longpoll(user_tgid: int):
     server, key, ts = _init_vklongpoll(user_tgid)
     while True:
+        g.logs.debug('Vk longpoll')
         req_str = f'https://{server}?act=a_check&key={key}&ts={ts}&wait=25&mode=2&version=1'
 
         resp = requests.get(req_str).json()
