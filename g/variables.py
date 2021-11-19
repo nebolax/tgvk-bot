@@ -1,6 +1,6 @@
 import logging
 import pymitter
-import utils
+from . import *
 
 # В этом файле находятся глобалальные объекты, требующие инициализации при запуске
 
@@ -20,4 +20,4 @@ logs.addHandler(file_handler)
 
 ee = pymitter.EventEmitter()
 
-state = utils.SavingDict('state.json')
+state = SavingDict('state.json')

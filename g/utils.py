@@ -4,10 +4,10 @@ import enum
 
 class SavingDict(dict):
     def __init__(self, path: str):
-        with open(path) as f:
+        self.path = 'json/' + path
+        with open(self.path) as f:
             loaded = json.loads(f.read())
             super(SavingDict, self).__init__(loaded)
-        self.path = 'json/' + path
 
     def __setitem__(self, item, value):
         super(SavingDict, self).__setitem__(item, value)
@@ -19,12 +19,6 @@ class SavingDict(dict):
             return super().__getitem__(key)
         except:
             return None
-
-
-class RouteType(enum.Enum):
-    personal = 0
-    group = 1
-    community = 2
 
 
 def dict_to_str(data, tabs=0):

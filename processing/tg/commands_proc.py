@@ -1,4 +1,5 @@
 import store
+import g, api
 
 
 def bot_command(cmd: str, text_args: str, msg: dict):
@@ -9,6 +10,8 @@ def bot_command(cmd: str, text_args: str, msg: dict):
 def proc_start_command(msg: dict):
     if msg['chat']['type'] != 'private':
         return
+    g.state['waiting_token'] = g.state['waiting_token'] + [msg['chat']['id']]
+    api.send_tg_message(msg['chat']['id'], {'text': g.welcome_message})
 
 
 def proc_vkpeer_command(text_args: str, msg: dict):
