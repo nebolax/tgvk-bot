@@ -1,4 +1,3 @@
 __pycache__/
-state.json
-config.py
-otp*
+# json/*
+logs/*
