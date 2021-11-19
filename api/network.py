@@ -1,26 +1,25 @@
 import requests
-import security, static_info
+import g, store
 from threading import Thread, Lock
-import g
 
 mutex = Lock()
 
 
 def _tg_method(method: str, params: dict = {}):
-    resp = requests.post(static_info.base_tg_url + static_info.bot_token + method, json=params).json()
+    resp = requests.post(g.base_tg_url + g.bot_token + method, json=params).json()
     if not resp['ok']:
         g.logs.error(f'Tg-method {method} failed. Params: {params}, Response: {resp}')
     return resp
 
 
 def _vk_method(method: str, user_tgid: int, params: dict = {}):
-    vktoken = security.get_vktoken(user_tgid)
+    vktoken = store.user_by_tgid(user_tgid)
     if vktoken is None:
         g.logs.warning(f'Got message from unregistered user {user_tgid}')
         return
-    params_str = 'access_token=' + vktoken + '&v=5.131&'
+    params_str = 'access_token=' + vktoken + '&v=5s.131&'
     params_str += '&'.join([key+'='+str(val) for key, val in params.items()])
-    resp = requests.get(static_info.base_vk_url + method + '/?' + params_str).json()
+    resp = requests.get(g.base_vk_url + method + '/?' + params_str).json()
     if 'error' in resp:
         g.logs.error(f'Vk-method failed!! Response: {resp}')
     return resp
@@ -43,12 +42,12 @@ def _tg_longpoll():
             _single_tg_update(update)
 
 
-def _init_vklongpoll(user_tgid):
+def _init_vklongpoll(user_tgid: int):
     resp = _vk_method('messages.getLongPollServer', user_tgid)['response']
     return (resp['server'], resp['key'], resp['ts'])
 
 
-def _vk_longpoll(user_tgid):
+def _vk_longpoll(user_tgid: int):
     server, key, ts = _init_vklongpoll(user_tgid)
     while True:
         req_str = f'https://{server}?act=a_check&key={key}&ts={ts}&wait=25&mode=2&version=1'
@@ -66,14 +65,14 @@ def _vk_longpoll(user_tgid):
         for update in resp['updates']:
             _single_vk_update(update)
 
-def start_new_vklongpoll(tg_userid):
+def start_new_vklongpoll(tg_userid: int):
     vk_thread = Thread(target=_vk_longpoll, args=(tg_userid,))
     vk_thread.start()
     g.logs.debug(f'New vk longpoll for user f{tg_userid} started')
 
 def _init():
-    for user_id in security.getall_tgusers():
-        start_new_vklongpoll(user_id)
+    for user_tgid in store.all_users_tgids():
+        start_new_vklongpoll(user_tgid)
 
     tg_thread = Thread(target=_tg_longpoll)
     tg_thread.start()

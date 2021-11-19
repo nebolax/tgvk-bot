@@ -1,5 +1,5 @@
 from . import network as net
-import g, static_info
+import g
 
 
 def send_tg_message(chat_id: int, params: dict):
@@ -8,7 +8,7 @@ def send_tg_message(chat_id: int, params: dict):
     net._tg_method('sendMessage', params)
 
 
-def send_tg_photos(chat_id: int, params: dict, caption: str = ''):
+def send_tg_media(chat_id: int, caption: str, params: dict):
     params['chat_id'] = chat_id
     params['media'][0]['parse_mode'] = 'HTML'
     params['media'][0]['caption'] = caption
@@ -29,6 +29,6 @@ def get_tg_photo_link(photo_variants: list):
     })['result']
 
     return (
-        static_info.base_tg_url + 'file/' +
-        static_info.bot_token +
+        g.base_tg_url + 'file/' +
+        g.bot_token +
         phid_resp['file_path'])

@@ -1,14 +1,17 @@
+from store.routes import routes_by_vkpeer
+from store.users import user_by_vkid
 from . import network as net
 import random
 
-
-def send_vk_message(peer_id: int, user_tgid: int, params: dict):
+def send_vk_message(peer_id: int, params: dict):
+    user_tgid = routes_by_vkpeer(peer_id)['tg_userid']
     params['peer_id'] = peer_id
     params['random_id'] = random.getrandbits(31) * random.choice([-1, 1])
     net._vk_method('messages.send', user_tgid, params)
 
 
-def person_name(vk_id: int, user_tgid: int):
+def vk_person_name(vk_id: int):
+    user_tgid = user_by_vkid(vk_id)['tgid']
     # Person can be a human or community
     if vk_id > 0:
         resp = net._vk_method('users.get', user_tgid, {
@@ -21,7 +24,7 @@ def person_name(vk_id: int, user_tgid: int):
         })['response'][0]['name']
 
 
-def message_attachments(message_id: int, user_tgid: int):
+def vk_msg_attachments(message_id: int, user_tgid: int):
     resp = net._vk_method('messages.getById', user_tgid, {
         'message_ids': message_id
     })
@@ -46,4 +49,4 @@ def message_attachments(message_id: int, user_tgid: int):
         
         attachments_urls.append(largest_url)
 
-    return attachments_urls
+    return [('photo', attachments_urls)]
