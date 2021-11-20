@@ -12,6 +12,7 @@ def send_vk_message(route: dict, params: dict):
 
 
 def vk_person_name(vk_id: int, requester_tgid: int):
+    vk_id = int(vk_id)
     g.logs.debug(f'Vk id: {vk_id}')
     user_tgid = requester_tgid
     # Person can be a human or community
