@@ -4,7 +4,7 @@ from threading import Thread, Lock
 
 mutex = Lock()
 
-
+@g.tryexcept
 def _tg_method(method: str, params: dict = {}):
     if method != 'getUpdates':
         g.logs.debug(f'TG-method: {method}, --- {params}')
@@ -14,7 +14,7 @@ def _tg_method(method: str, params: dict = {}):
         return None
     return resp
 
-
+@g.tryexcept
 def _vk_method(method: str, user_tgid: int, params: dict = {}):
     g.logs.debug(f'VK-method: {method}, --- {user_tgid}, --- {params}')
     vktoken = store.user_by_tgid(user_tgid)['vktoken']
@@ -26,7 +26,7 @@ def _vk_method(method: str, user_tgid: int, params: dict = {}):
         return None
     return resp
 
-
+@g.tryexcept
 def _tg_longpoll():
     updates_offset = g.state['tg_offset']
     while True:
@@ -43,16 +43,15 @@ def _tg_longpoll():
             g.state['tg_offset'] = updates_offset
             _single_tg_update(update)
 
-
+@g.tryexcept
 def _init_vklongpoll(user_tgid: int):
     resp = _vk_method('messages.getLongPollServer', user_tgid)['response']
     return (resp['server'], resp['key'], resp['ts'])
 
-
+@g.tryexcept
 def _vk_longpoll(user_tgid: int):
     server, key, ts = _init_vklongpoll(user_tgid)
     while True:
-        g.logs.debug('Vk longpoll')
         req_str = f'https://{server}?act=a_check&key={key}&ts={ts}&wait=25&mode=2&version=1'
 
         resp = requests.get(req_str).json()
@@ -67,7 +66,7 @@ def _vk_longpoll(user_tgid: int):
         ts = resp['ts']
         for update in resp['updates']:
             _single_vk_update(update)
-
+@g.tryexcept
 def start_new_vklongpoll(tg_userid: int):
     vk_thread = Thread(target=_vk_longpoll, args=(tg_userid,))
     vk_thread.start()
