@@ -87,6 +87,7 @@ def _throwEvent(type: str, data):
 def _single_vk_update(update: list):
     match(update[0]):
         case 4:
+            g.logs.debug(f'Got new message from vk: {update}')
             _throwEvent("vk.msg", update[1:])
 
 
@@ -97,6 +98,7 @@ def _single_tg_update(update: dict):
 
     match(list(update.keys())[1]):
         case 'message':
+            g.logs.debug(f'Got new message from telegram: {update}')
             _throwEvent("tg.msg", update['message'])
 
 ##########################################################3
