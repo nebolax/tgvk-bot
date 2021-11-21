@@ -1,8 +1,7 @@
-from store.routes import routes_by_vkpeer
-from store.users import user_by_vkid
 from . import network as net
 import random
 import g
+
 
 def send_vk_message(route: dict, params: dict):
     user_tgid = route['tg_userid']
@@ -43,13 +42,13 @@ def vk_msg_attachments(message_id: int, user_tgid: int):
 
     for attachment in attachments_list:
         attachment_sizes = attachment[attachment_type]['sizes']
-        largest_height = 0
+        largest_height = 0  
         largest_url = ''
         for size in attachment_sizes:
             if size['height'] > largest_height:
                 largest_height = size['height']
                 largest_url = size['url']
-        
+
         attachments.append(('photo', largest_url))
 
     return attachments

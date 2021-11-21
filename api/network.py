@@ -25,8 +25,7 @@ def _vk_method(method: str, user_tgid: int, params: dict = {}):
         g.logs.error(f'Vk-method failed!! Response: {resp}')
         return None
     return resp
-
-@g.tryexcept
+    
 def _tg_longpoll():
     updates_offset = g.state['tg_offset']
     while True:
@@ -48,7 +47,6 @@ def _init_vklongpoll(user_tgid: int):
     resp = _vk_method('messages.getLongPollServer', user_tgid)['response']
     return (resp['server'], resp['key'], resp['ts'])
 
-@g.tryexcept
 def _vk_longpoll(user_tgid: int):
     server, key, ts = _init_vklongpoll(user_tgid)
     while True:
@@ -85,14 +83,14 @@ def _throwEvent(type: str, data):
     with mutex:
         g.ee.emit(type, data)
 
-
+@g.tryexcept
 def _single_vk_update(update: list):
     match(update[0]):
         case 4:
             _throwEvent("vk.msg", update[1:])
 
 
-
+@g.tryexcept
 def _single_tg_update(update: dict):
     if len(update.keys()) > 2:
         g.logs.critical("Tg can have more than 2 keys!: " + str(update.keys()))
