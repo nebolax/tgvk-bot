@@ -2,6 +2,7 @@ import api, g
 
 
 def route_vkmsg(route: dict, msg: dict):
+    msg['text'] += f'<b>{api.vk_person_name(msg["sender_id"], route["tg_userid"])}:</b>\n'
     attachments = []
     if 'attach1' in msg['extra_info']:
         fetched = api.vk_msg_attachments(
@@ -10,7 +11,7 @@ def route_vkmsg(route: dict, msg: dict):
 
     if len(attachments) == 0:
         api.send_tg_message(route['tg_chatid'], {
-            'text': f'<b>{api.vk_person_name(msg["sender_id"], route["tg_userid"])}:</b>\n' + msg['text']
+            'text': msg['text']
         })
     else:
         api.send_tg_media(route['tg_chatid'], msg['text'], {'media': attachments})
