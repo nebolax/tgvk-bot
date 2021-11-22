@@ -2,7 +2,7 @@ import api, g
 
 
 def route_vkmsg(route: dict, msg: dict):
-    msg['text'] += f'<b>{api.vk_person_name(msg["sender_id"], route["tg_userid"])}:</b>\n'
+    msg['text'] = f'<b>{api.vk_person_name(msg["sender_id"], route["tg_userid"])}:</b>\n' + msg['text']
     attachments = []
     if 'attach1' in msg['extra_info']:
         fetched = api.vk_msg_attachments(
