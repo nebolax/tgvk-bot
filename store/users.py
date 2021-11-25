@@ -1,35 +1,18 @@
-import g
+from .images import User
+from .operating import get_session
 
 
-def user_by_tgid(tgid: int) -> dict:
-    tgid = str(tgid)
-    if tgid not in _users:
-        return None
-    return dict(**_users[tgid], tgid=tgid)
+def user_by_tgid(tgid: int) -> User:
+    return get_session().query(User).filter(User.tg_id == tgid).first()
 
 
-def user_by_vkid(vkid: int) -> dict:
-    vkid = str(vkid)
-    for tgid, val in _users.items():
-        if val['vkid'] == vkid:
-            return dict(**val, tgid=tgid)
-    return None
+def user_by_vkid(vkid: int) -> User:
+    return get_session().query(User).filter(User.tg_id == vkid).first()
 
 
-def new_user(tgid: int, vkid: int, vktoken: str) -> None:
-    tgid = str(tgid)
-    vkid = str(vkid)
-    if tgid in _users:
-        g.logs.warning(f'Re-registering user with tg id {tgid}')
-
-    _users[tgid] = {
-        'vkid': vkid,
-        'vktoken': vktoken,
-    }
+def new_user(user: User) -> None:
+    get_session().add(user)
 
 
-def all_users_tgids() -> list[dict]:
-    return _users.keys()
-
-
-_users = g.SavingDict('users.json')
+def all_users_ids() -> list[int]:
+    return list(map(lambda val: val.tg_id, get_session().query(User)))

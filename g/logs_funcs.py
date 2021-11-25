@@ -1,5 +1,5 @@
-from .variables import logs
 import traceback
+from .conf_logs import logs
 
 def tryexcept(func):
     def wrapper(*args, **kwargs):

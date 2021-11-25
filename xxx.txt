@@ -1,0 +1,1595 @@
+
+conversation: 
+  peer: 
+    id: 2000000113
+    type: chat
+    local_id: 113 }
+  last_message_id: 220075
+  in_read: 220072
+  out_read: 220075
+  sort_id: 
+    major_id: 0
+    minor_id: 220075 }
+  last_conversation_message_id: 59616
+  in_read_cmid: 59613
+  out_read_cmid: 59616
+  unread_count: 3
+  is_marked_unread: False
+  important: False
+  push_settings: 
+    disabled_forever: True
+    no_sound: True
+    disabled_mentions: False
+    disabled_mass_mentions: False }
+  can_write: 
+    allowed: True }
+  chat_settings: 
+    owner_id: 365857713
+    title: последний круг ада
+    state: in
+    acl: 
+      can_change_info: True
+      can_change_invite_link: False
+      can_change_pin: True
+      can_invite: True
+      can_promote_users: False
+      can_see_invite_link: False
+      can_moderate: False
+      can_copy_chat: False
+      can_call: True
+      can_use_mass_mentions: True
+      can_change_style: True }
+    members_count: 28
+    pinned_message: 
+      date: 1637229118
+      from_id: 246897646
+      id: 219428
+      peer_id: 2000000113
+      text: 
+      attachments: 
+      conversation_message_id: 59361
+      fwd_messages: 
+        { 
+          date: 1637229097
+          from_id: 1934462
+          text: 
+          attachments: 
+            { 
+              type: doc
+              doc: 
+                id: 621273791
+                owner_id: 1934462
+                title: Листок Алкины.docx
+                size: 14133
+                ext: docx
+                date: 1637229095
+                type: 1
+                url: https://vk.com/doc1934462_621273791?hash=069d145f7c9bba0cd1&dl=GI3TEOJYGY4TKOA:1637613819:ce03740c1cfa0bc1bf&api=1&no_preview=1
+                access_key: 048ce02ba69fe25b2d } } }
+          conversation_message_id: 30 } }
+      geo: 
+        coordinates: 
+          latitude: 0.0
+          longitude: 0.0 }
+        type:  } }
+    photo: 
+      photo_50: https://sun1-54.userapi.com/s/v1/if1/yniN8VgATGg41Mi3Iy1TJk4SSn2mSX2AjDtpvWd4Rh09vqwM7tkYbgvtg4_pykJ4_LfP6725.jpg?size=50x0&quality=96&crop=151,0,719,719&ava=1
+      photo_100: https://sun1-54.userapi.com/s/v1/if1/LYY0qQkQl_8rgcEWhQppbG_aiPo6wJbC5Sm9GBnUSOjzGaTA9nSHkoRqm5csRPtaFr5EWyCH.jpg?size=100x0&quality=96&crop=151,0,719,719&ava=1
+      photo_200: https://sun1-54.userapi.com/s/v1/if1/75O_in5SM7vkkYB0HJXezPV4NSVCuFVSpf8NSOQ2e6mg9R7ocWUgiS-K0a0GOqxkTHUO6fRM.jpg?size=200x0&quality=96&crop=151,0,719,719&ava=1
+      is_default_photo: False
+      is_default_call_photo: False }
+    active_ids: 
+      { 254240835 }
+      { 535786738 }
+      { 218420982 }
+      { 430625075 }
+    is_group_channel: False
+    is_disappearing: False
+    is_service: False }
+  style: candy }
+last_message: 
+  date: 1637612157
+  from_id: 339128920
+  id: 220075
+  out: 0
+  peer_id: 2000000113
+  text: Ну стереому я готова пережить в школе, у меня все равно 1 парой спк
+  attachments: 
+  conversation_message_id: 59616
+  fwd_messages: 
+  important: False
+  is_hidden: False
+  random_id: 0 } }
+
+conversation: 
+  peer: 
+    id: 2000000066
+    type: chat
+    local_id: 66 }
+  last_message_id: 220071
+  in_read: 220071
+  out_read: 220071
+  sort_id: 
+    major_id: 0
+    minor_id: 220071 }
+  last_conversation_message_id: 30174
+  in_read_cmid: 30174
+  out_read_cmid: 30174
+  is_marked_unread: False
+  important: False
+  push_settings: 
+    disabled_forever: True
+    no_sound: True
+    disabled_mentions: False
+    disabled_mass_mentions: False }
+  can_write: 
+    allowed: True }
+  chat_settings: 
+    owner_id: 33832683
+    title: 11Е  и Таня, для решения  разных вопросов
+    state: in
+    acl: 
+      can_change_info: True
+      can_change_invite_link: False
+      can_change_pin: True
+      can_invite: True
+      can_promote_users: False
+      can_see_invite_link: False
+      can_moderate: False
+      can_copy_chat: False
+      can_call: True
+      can_use_mass_mentions: True
+      can_change_style: True }
+    members_count: 36
+    pinned_message: 
+      date: 1636401381
+      from_id: 33832683
+      id: 217720
+      peer_id: 2000000066
+      text: 
+      attachments: 
+        { 
+          type: link
+          link: 
+            url: https://docs.google.com/spreadsheets/d/1CBizmxnwuUA9M-z6MPscadYeKXCl3id6sxqajxidK70/edit#gid=1483886023
+            title: Олимпиада по предметам
+            caption: docs.google.com
+            description: ОБЩЕСТВОЗНАНИЕ ОБЩЕСТВОЗНАНИЕ 30 октября 10:00 - 10-11 классы 15:00 - 7-9 классы продолжительность,Группа 1 150 минут,7 класс,?a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTNmY2JhYTQtZTE0ZS00ZTI2LWI3Y2UtODczM2ZkMTZlYmEx%40thread.v2/0?context=%7b%22Tid%22%3a%22dcb67d46-35b2-47...
+            photo: 
+              album_id: -28
+              date: 1636401381
+              id: 457353067
+              owner_id: 2000051720
+              has_tags: False
+              sizes: 
+                { 
+                  height: 480
+                  url: https://sun9-73.userapi.com/impg/CCl-dof35AE2CMlKoRrC-07yjSaxYg0mG54HcA/j91QNKky-K4.jpg?size=1074x480&quality=96&sign=b36301350da85c3bc6ef7ff8b5890a90&c_uniq_tag=tiiZojHNb3q3WpLZLsF7JWgslrCxtVSXfiXgZxK1R6U&type=share
+                  type: k
+                  width: 1074 } }
+                { 
+                  height: 240
+                  url: https://sun9-73.userapi.com/impg/CCl-dof35AE2CMlKoRrC-07yjSaxYg0mG54HcA/j91QNKky-K4.jpg?size=537x240&quality=96&sign=ff1be92e2738abae57cd22b424efa254&c_uniq_tag=vXtT1-Rn-ZKc7TSCLNZ0dGr0GqajPJAhb_HSpnSuYT4&type=share
+                  type: l
+                  width: 537 } }
+                { 
+                  height: 68
+                  url: https://sun9-73.userapi.com/impg/CCl-dof35AE2CMlKoRrC-07yjSaxYg0mG54HcA/j91QNKky-K4.jpg?size=130x80&quality=96&crop=147,0,780,480&sign=5082877659f924f1c842425802c54bc6&c_uniq_tag=CE5PS1GYOzAG1BYkbr9OxctZOIZapSFU8Tz8xtEAb0I&type=share
+                  type: m
+                  width: 130 } }
+                { 
+                  height: 87
+                  url: https://sun9-21.userapi.com/R6l3RG8B3ZJtXuvORJa-FJBDTUx7dpD5KlKKlg/-apMGtFdXiA.jpg
+                  type: o
+                  width: 130 } }
+                { 
+                  height: 133
+                  url: https://sun9-73.userapi.com/impg/CCl-dof35AE2CMlKoRrC-07yjSaxYg0mG54HcA/j91QNKky-K4.jpg?size=260x140&quality=96&crop=91,0,891,480&sign=a25ffb92e8c47e52ec4e4fc4b8714ff7&c_uniq_tag=rvNow_i4SEopf4BBzwrRrLd1BAbjbo-sHBQzqtQT6Is&type=share
+                  type: p
+                  width: 200 } }
+                { 
+                  height: 213
+                  url: https://sun9-88.userapi.com/oY0XPGNI4A1ztCCHgkbJx4Otowrgwkhm0-iOYg/ebAGMwxS7Bw.jpg
+                  type: q
+                  width: 320 } }
+                { 
+                  height: 340
+                  url: https://sun9-34.userapi.com/UfAzvvwv0sU2CRYRaU42f0LjcGutMtJg9_1tzw/S4EePcMYdMs.jpg
+                  type: r
+                  width: 510 } }
+                { 
+                  height: 39
+                  url: https://sun9-73.userapi.com/impg/CCl-dof35AE2CMlKoRrC-07yjSaxYg0mG54HcA/j91QNKky-K4.jpg?size=75x35&quality=96&crop=22,0,1029,480&sign=8d775f3fd2e988c744803fd042407e27&c_uniq_tag=3H1gKKjVhFM0AjntwwKFnGNZzrxEPsYgISpKq9FbMh0&type=share
+                  type: s
+                  width: 75 } }
+                { 
+                  height: 317
+                  url: https://sun9-73.userapi.com/impg/CCl-dof35AE2CMlKoRrC-07yjSaxYg0mG54HcA/j91QNKky-K4.jpg?size=150x80&quality=96&crop=87,0,900,480&sign=8bbab807ee73821a5cb391bb96719dff&c_uniq_tag=9Km5HlqoUNbX1wYoy-Krh1eozHlM6hXHbeKASiDTbqU&type=share
+                  type: x
+                  width: 604 } }
+                { 
+                  height: 424
+                  url: https://sun9-76.userapi.com/SO9Juuwb3tU47PdMx8pXP150SDNnsxPx8XDdTQ/XYFCf9D2wbQ.jpg
+                  type: y
+                  width: 807 } }
+                { 
+                  height: 630
+                  url: https://sun9-66.userapi.com/d8OTvrbkiOUz2t8WjO_BMFdsHrIn3l12OnY8Gw/ZEokJvqJgVU.jpg
+                  type: z
+                  width: 1200 } }
+              text: 
+              user_id: 100 }
+            is_favorite: False } } }
+      conversation_message_id: 29930
+      fwd_messages: 
+      geo: 
+        coordinates: 
+          latitude: 0.0
+          longitude: 0.0 }
+        type:  } }
+    photo: 
+      photo_50: https://sun1-89.userapi.com/s/v1/ig2/g0_D2bSgRss5YHVsHnjPHKSiTCp7ORZGByJJy_msa_Ir6MsGT4RudS-tZInndcr9-liCf_yoGrUgyKz6wOs6xnUs.jpg?size=50x0&quality=96&crop=413,124,765,765&ava=1
+      photo_100: https://sun1-89.userapi.com/s/v1/ig2/i68pzT3RiqtP7u_-I3AUvxP2RpAPnyfQukfJqX2jViShjJO4990HdrPGRM8EHgB9gP11vXyhpQc4MzOy3m7xTyBv.jpg?size=100x0&quality=96&crop=413,124,765,765&ava=1
+      photo_200: https://sun1-89.userapi.com/s/v1/ig2/rCTst-6MMcIuvQM8BCHqfIZoDiaOXpPIDVknvKNyax3hgC4hYmEPQOmuYMf2z8LDmDi3OA-tezkVESUzuTBNoSDJ.jpg?size=200x0&quality=96&crop=413,124,765,765&ava=1
+      is_default_photo: False
+      is_default_call_photo: False }
+    active_ids: 
+      { 254240835 }
+      { 218420982 }
+      { 281198266 }
+      { 453691189 }
+    is_group_channel: False
+    is_disappearing: False
+    is_service: False } }
+last_message: 
+  date: 1637611466
+  from_id: 272986958
+  id: 220071
+  out: 1
+  peer_id: 2000000066
+  text: Таня, а про пару Алекса в среду известно что-нибудь?
+  attachments: 
+  conversation_message_id: 30174
+  fwd_messages: 
+  important: False
+  is_hidden: False
+  random_id: -1352381311 } }
+
+conversation: 
+  peer: 
+    id: 2000000134
+    type: chat
+    local_id: 134 }
+  last_message_id: 220053
+  in_read: 220053
+  out_read: 220053
+  sort_id: 
+    major_id: 0
+    minor_id: 220053 }
+  last_conversation_message_id: 2453
+  in_read_cmid: 2453
+  out_read_cmid: 2453
+  is_marked_unread: False
+  important: False
+  push_settings: 
+    disabled_forever: True
+    no_sound: True
+    disabled_mentions: False
+    disabled_mass_mentions: False }
+  can_write: 
+    allowed: True }
+  chat_settings: 
+    owner_id: 42063614
+    title: Кафедра программирования 9-10-11Е 2020-2021
+    state: in
+    acl: 
+      can_change_info: True
+      can_change_invite_link: False
+      can_change_pin: True
+      can_invite: True
+      can_promote_users: False
+      can_see_invite_link: False
+      can_moderate: False
+      can_copy_chat: False
+      can_call: True
+      can_use_mass_mentions: True
+      can_change_style: True }
+    members_count: 41
+    admin_ids: 
+      { 1934462 }
+    active_ids: 
+      { 406838778 }
+      { 321885380 }
+      { 164320457 }
+      { 58485708 }
+    is_group_channel: False
+    is_disappearing: False
+    is_service: False } }
+last_message: 
+  date: 1637609770
+  from_id: 1934462
+  id: 220053
+  out: 0
+  peer_id: 2000000134
+  text: Ага, я тоже читал! :)
+  attachments: 
+  conversation_message_id: 2453
+  fwd_messages: 
+  important: False
+  is_hidden: False
+  random_id: 0 } }
+
+conversation: 
+  peer: 
+    id: 2000000165
+    type: chat
+    local_id: 165 }
+  last_message_id: 220036
+  in_read: 220036
+  out_read: 220036
+  sort_id: 
+    major_id: 0
+    minor_id: 220036 }
+  last_conversation_message_id: 87
+  in_read_cmid: 87
+  out_read_cmid: 87
+  is_marked_unread: False
+  important: False
+  can_write: 
+    allowed: True }
+  chat_settings: 
+    owner_id: 365857713
+    title: Компиляторы 11Е 2021-2022
+    state: in
+    acl: 
+      can_change_info: True
+      can_change_invite_link: False
+      can_change_pin: True
+      can_invite: True
+      can_promote_users: False
+      can_see_invite_link: False
+      can_moderate: False
+      can_copy_chat: False
+      can_call: True
+      can_use_mass_mentions: True
+      can_change_style: True }
+    members_count: 9
+    active_ids: 
+      { 406838778 }
+      { 321885380 }
+      { 499044183 }
+      { 1934462 }
+    is_group_channel: False
+    is_disappearing: False
+    is_service: False } }
+last_message: 
+  date: 1637599784
+  from_id: 1934462
+  id: 220036
+  out: 0
+  peer_id: 2000000165
+  text: Должна быть
+  attachments: 
+  conversation_message_id: 87
+  fwd_messages: 
+  important: False
+  is_hidden: False
+  random_id: 0 } }
+
+conversation: 
+  peer: 
+    id: 2000000099
+    type: chat
+    local_id: 99 }
+  last_message_id: 220032
+  in_read: 220032
+  out_read: 220032
+  sort_id: 
+    major_id: 0
+    minor_id: 220032 }
+  last_conversation_message_id: 4861
+  in_read_cmid: 4861
+  out_read_cmid: 4861
+  is_marked_unread: False
+  important: False
+  push_settings: 
+    disabled_forever: True
+    no_sound: False
+    disabled_mentions: False
+    disabled_mass_mentions: False }
+  can_write: 
+    allowed: True }
+  chat_settings: 
+    owner_id: 406838778
+    title: Русский язык 11Е и Маша
+    state: in
+    acl: 
+      can_change_info: True
+      can_change_invite_link: False
+      can_change_pin: True
+      can_invite: True
+      can_promote_users: False
+      can_see_invite_link: False
+      can_moderate: False
+      can_copy_chat: False
+      can_call: True
+      can_use_mass_mentions: True
+      can_change_style: True }
+    members_count: 29
+    pinned_message: 
+      date: 1636391188
+      from_id: 6800220
+      id: 217619
+      peer_id: 2000000099
+      text: Итак, добро пожаловать в игру https://docs.google.com/spreadsheets/d/1aUkbkexiQb4keWwqJsn_JKOrO8FbcbjjWkeXF_tmRdk/edit?usp=sharing
+      attachments: 
+        { 
+          type: link
+          link: 
+            url: https://docs.google.com/spreadsheets/d/1aUkbkexiQb4keWwqJsn_JKOrO8FbcbjjWkeXF_tmRdk/edit?usp=sharing
+            title: Google Таблицы ‒ бесплатно создавайте и редактируйте таблицы в Интернете.
+            caption: accounts.google.com
+            description: Создавайте таблицы и редактируйте их вместе с другими пользователями ‒ с компьютера, телефона или планшета. Работайте над документами даже без подключения к Интернету. Используйте Таблицы для редактирования файлов Excel. И все это бесплатно. От Google!
+            is_favorite: False } } }
+      conversation_message_id: 4781
+      fwd_messages: 
+      geo: 
+        coordinates: 
+          latitude: 0.0
+          longitude: 0.0 }
+        type:  } }
+    photo: 
+      photo_50: https://sun1-90.userapi.com/s/v1/ig2/20n-1sv9FZv11qIXHZVZH0py_2SESykYvwESfDaNskpinJq_WxojK6ryzkxpaNmau7tR8UfktQo8wvtR1RS_ZwFy.jpg?size=50x0&quality=96&crop=0,0,984,984&ava=1
+      photo_100: https://sun1-90.userapi.com/s/v1/ig2/QomGZT0oOp5od4Lx3saeATRwkVnLcINK9o1a0hYXuTYM3GgmECNz-Q5mlVmeGIwBNBi0Fkp0rqGV2RtQ6H9DLyh-.jpg?size=100x0&quality=96&crop=0,0,984,984&ava=1
+      photo_200: https://sun1-90.userapi.com/s/v1/ig2/oUvtxaPRUw01F0mmu-VkqpwZ-GvmQ-nTZBJKOlA3TB1Uy915oUoOUkGhobKeecp5tAeGAuLj9uy6ENM9Dv1NuDHE.jpg?size=200x0&quality=96&crop=0,0,984,984&ava=1
+      is_default_photo: False
+      is_default_call_photo: False }
+    active_ids: 
+      { 430625075 }
+      { 499044183 }
+      { 321885380 }
+      { 273924980 }
+    is_group_channel: False
+    is_disappearing: False
+    is_service: False } }
+last_message: 
+  date: 1637593790
+  from_id: 6800220
+  id: 220032
+  out: 0
+  peer_id: 2000000099
+  text: Хочу найти текст, который мне достался, и закинуть вам
+  attachments: 
+  conversation_message_id: 4861
+  fwd_messages: 
+  important: False
+  is_hidden: False
+  random_id: 0 } }
+
+conversation: 
+  peer: 
+    id: 412189174
+    type: user
+    local_id: 412189174 }
+  last_message_id: 219994
+  in_read: 219994
+  out_read: 219994
+  sort_id: 
+    major_id: 0
+    minor_id: 219994 }
+  last_conversation_message_id: 4190
+  in_read_cmid: 4190
+  out_read_cmid: 4190
+  is_marked_unread: False
+  important: False
+  push_settings: 
+    disabled_forever: True
+    no_sound: True
+    disabled_mentions: False
+    disabled_mass_mentions: False }
+  can_write: 
+    allowed: True } }
+last_message: 
+  date: 1637567522
+  from_id: 412189174
+  id: 219994
+  out: 0
+  peer_id: 412189174
+  text: А в класс ты зайдешь вовремя?
+  attachments: 
+  conversation_message_id: 4190
+  fwd_messages: 
+  important: False
+  is_hidden: False
+  random_id: 0 } }
+
+conversation: 
+  peer: 
+    id: 2000000171
+    type: chat
+    local_id: 171 }
+  last_message_id: 219986
+  in_read: 219986
+  out_read: 219986
+  sort_id: 
+    major_id: 0
+    minor_id: 219986 }
+  last_conversation_message_id: 57
+  in_read_cmid: 57
+  out_read_cmid: 57
+  is_marked_unread: False
+  important: False
+  push_settings: 
+    disabled_forever: True
+    no_sound: True
+    disabled_mentions: False
+    disabled_mass_mentions: False }
+  can_write: 
+    allowed: True }
+  chat_settings: 
+    owner_id: 613152716
+    title: Ролевка "Кара-Кризис" 14.11
+    state: in
+    acl: 
+      can_change_info: True
+      can_change_invite_link: False
+      can_change_pin: True
+      can_invite: True
+      can_promote_users: False
+      can_see_invite_link: True
+      can_moderate: False
+      can_copy_chat: False
+      can_call: True
+      can_use_mass_mentions: True
+      can_change_style: True }
+    members_count: 39
+    active_ids: 
+      { 207318099 }
+      { 613152716 }
+      { 547081653 }
+      { 321349905 }
+    is_group_channel: False
+    is_disappearing: False
+    is_service: False } }
+last_message: 
+  date: 1637565184
+  from_id: 613152716
+  id: 219986
+  out: 0
+  peer_id: 2000000171
+  text: 
+  action: 
+    type: chat_unpin_message
+    conversation_message_id: 35
+    member_id: 613152716 }
+  attachments: 
+  conversation_message_id: 57
+  fwd_messages: 
+  important: False
+  is_hidden: False
+  random_id: 0 } }
+
+conversation: 
+  peer: 
+    id: 2000000164
+    type: chat
+    local_id: 164 }
+  last_message_id: 219980
+  in_read: 219980
+  out_read: 219980
+  sort_id: 
+    major_id: 0
+    minor_id: 219980 }
+  last_conversation_message_id: 1798
+  in_read_cmid: 1798
+  out_read_cmid: 1798
+  is_marked_unread: False
+  important: False
+  push_settings: 
+    disabled_forever: False
+    no_sound: True
+    disabled_mentions: False
+    disabled_mass_mentions: False }
+  can_write: 
+    allowed: True }
+  chat_settings: 
+    owner_id: 406838778
+    title: ymca mafia club
+    state: in
+    acl: 
+      can_change_info: True
+      can_change_invite_link: False
+      can_change_pin: True
+      can_invite: True
+      can_promote_users: False
+      can_see_invite_link: False
+      can_moderate: False
+      can_copy_chat: False
+      can_call: True
+      can_use_mass_mentions: True
+      can_change_style: True }
+    members_count: 21
+    pinned_message: 
+      date: 1637560269
+      from_id: 559140378
+      id: 219972
+      peer_id: 2000000164
+      text: 
+      attachments: 
+        { 
+          type: poll
+          poll: 
+            multiple: False
+            end_date: 0
+            closed: False
+            is_board: False
+            can_edit: False
+            can_vote: True
+            can_report: True
+            can_share: True
+            created: 1637560266
+            id: 658801403
+            owner_id: 559140378
+            question: маф чилл
+            votes: 13
+            disable_unvote: False
+            anonymous: False
+            friends: 
+              { 
+                id: 272986958 } }
+              { 
+                id: 452720262 } }
+              { 
+                id: 559140378 } }
+            answer_ids: 
+              { 1889729773 }
+            embed_hash: 658801403_b843cfa570433fde11
+            answers: 
+              { 
+                id: 1889729773
+                rate: 53.85
+                text: Буду
+                votes: 7 } }
+              { 
+                id: 1889729774
+                rate: 0.0
+                text: Не буду
+                votes: 0 } }
+              { 
+                id: 1889729775
+                rate: 7.69
+                text: К 5
+                votes: 1 } }
+              { 
+                id: 1889730081
+                rate: 38.46
+                text: Пока даже не знаю
+                votes: 5 } }
+            author_id: 559140378 } } }
+      conversation_message_id: 1790
+      fwd_messages: 
+      geo: 
+        coordinates: 
+          latitude: 0.0
+          longitude: 0.0 }
+        type:  } }
+    photo: 
+      photo_50: https://sun1-30.userapi.com/s/v1/ig2/COulBLmgz0OtqUXApmazaLttCqay-3X6eKm-oxgiPRJJ5q2SyqUHwHNUUfM8cB5BJ52bKt7RD8LJKXBfEkGQhLZ0.jpg?size=50x0&quality=96&crop=0,0,992,992&ava=1
+      photo_100: https://sun1-30.userapi.com/s/v1/ig2/6D1Fov4UE-JQ_Pn8ozjkZiEl48diyq8LM8RVAxWnCQKcBEv_Pgh1FxkWzK5usiK5NkwM8RQ2i4zTFpS1RAa2DJW2.jpg?size=100x0&quality=96&crop=0,0,992,992&ava=1
+      photo_200: https://sun1-30.userapi.com/s/v1/ig2/BHY9SwXR8fT2vaL-ykNjqSHn4XBAI-7BP7NmBs2vav3RcVcJU1npzhjXCR_gKNBovMHl0VBH15epp53hiOv4tWQL.jpg?size=200x0&quality=96&crop=0,0,992,992&ava=1
+      is_default_photo: False
+      is_default_call_photo: False }
+    active_ids: 
+      { 386577903 }
+      { 559140378 }
+      { 452720262 }
+      { 406838778 }
+    is_group_channel: False
+    is_disappearing: False
+    is_service: False } }
+last_message: 
+  date: 1637560346
+  from_id: 386577903
+  id: 219980
+  out: 0
+  peer_id: 2000000164
+  text: Конечно
+  attachments: 
+  conversation_message_id: 1798
+  fwd_messages: 
+  important: False
+  is_hidden: False
+  random_id: 0 } }
+
+conversation: 
+  peer: 
+    id: 2000000173
+    type: chat
+    local_id: 173 }
+  last_message_id: 219955
+  in_read: 219955
+  out_read: 219955
+  sort_id: 
+    major_id: 0
+    minor_id: 219955 }
+  last_conversation_message_id: 119
+  in_read_cmid: 119
+  out_read_cmid: 119
+  is_marked_unread: False
+  important: False
+  push_settings: 
+    disabled_forever: True
+    no_sound: True
+    disabled_mentions: False
+    disabled_mass_mentions: False }
+  can_write: 
+    allowed: True }
+  chat_settings: 
+    owner_id: -141127580
+    title: Mem-acho
+    state: in
+    acl: 
+      can_change_info: True
+      can_change_invite_link: True
+      can_change_pin: True
+      can_invite: True
+      can_promote_users: False
+      can_see_invite_link: True
+      can_moderate: True
+      can_copy_chat: False
+      can_call: False
+      can_use_mass_mentions: True
+      can_change_style: True }
+    members_count: 2
+    photo: 
+      photo_50: https://sun1-56.userapi.com/s/v1/if1/RevAfaFFgWZY4xNV37gkTy5vbfAsxSdTn1idcM2MlNz-DW4aHj40V6tbg6E3mpJKllp4gc9N.jpg?size=50x0&quality=96&crop=2,397,1078,1078&ava=1
+      photo_100: https://sun1-56.userapi.com/s/v1/if1/qUZgOE7dkh0xm2CQuQuFYypXOpWNzWc93gZbnYFc2k7sY000FoTJYSGUKg1B7p6sVpRxFTiN.jpg?size=100x0&quality=96&crop=2,397,1078,1078&ava=1
+      photo_200: https://sun1-56.userapi.com/s/v1/if1/DADmGl1CGaoXejck7IcE797JtMQv83ZhS7auTEMFzvCwD9tDDMF2dinwW5cM0o36-V87lvew.jpg?size=200x0&quality=96&crop=2,397,1078,1078&ava=1
+      is_default_photo: False
+      is_default_call_photo: False }
+    admin_ids: 
+      { 272986958 }
+    active_ids: 
+      { -141127580 }
+      { 272986958 }
+    is_group_channel: False
+    is_disappearing: False
+    is_service: False } }
+last_message: 
+  date: 1637529725
+  from_id: -141127580
+  id: 219955
+  out: 0
+  peer_id: 2000000173
+  text: /
+  attachments: 
+  conversation_message_id: 119
+  fwd_messages: 
+  important: False
+  is_hidden: False
+  random_id: 0
+  reply_message: 
+    date: 1637529696
+    from_id: 272986958
+    text: 
+    attachments: 
+    conversation_message_id: 117
+    fwd_messages: 
+      { 
+        date: 1637527728
+        from_id: 235869919
+        text: Ещё такое есть
+        attachments: 
+          { 
+            type: photo
+            photo: 
+              album_id: -3
+              date: 1637526395
+              id: 457241460
+              owner_id: 235869919
+              has_tags: False
+              access_key: 30602b0a7e16c341e1
+              sizes: 
+                { 
+                  height: 75
+                  url: https://sun9-72.userapi.com/impg/NmMADG9KQ1EecLSInA-LL0HCnyevkWfF0qzOVw/1JSlPWeHkn4.jpg?size=56x75&quality=96&sign=46fff844c275fd771e5647ad4bbc7aac&c_uniq_tag=cmeOyySNkTBeLw1vYSAP7rqzW8O34ay2ch39vNwK_H0&type=album
+                  type: s
+                  width: 56 } }
+                { 
+                  height: 130
+                  url: https://sun9-72.userapi.com/impg/NmMADG9KQ1EecLSInA-LL0HCnyevkWfF0qzOVw/1JSlPWeHkn4.jpg?size=97x130&quality=96&sign=815c485cdb9d9bad33d855dd997086da&c_uniq_tag=0rAqOb_PmKPViL2yDdHsvKpBsR3SrrqNMz20fCL8LFw&type=album
+                  type: m
+                  width: 97 } }
+                { 
+                  height: 604
+                  url: https://sun9-72.userapi.com/impg/NmMADG9KQ1EecLSInA-LL0HCnyevkWfF0qzOVw/1JSlPWeHkn4.jpg?size=453x604&quality=96&sign=0c24a4a8cecfa04298f0a3e7149a2ffb&c_uniq_tag=LJf1C1-54lR3UVzbqdBLXdAzg3mNeSTEODFeEgagwUA&type=album
+                  type: x
+                  width: 453 } }
+                { 
+                  height: 807
+                  url: https://sun9-72.userapi.com/impg/NmMADG9KQ1EecLSInA-LL0HCnyevkWfF0qzOVw/1JSlPWeHkn4.jpg?size=605x807&quality=96&sign=837de92c28f326d2c04bb137ca420578&c_uniq_tag=EpVGdqAvJQQRh9WnA4ZDmdMSUP23TuZzxVmapVr2JvU&type=album
+                  type: y
+                  width: 605 } }
+                { 
+                  height: 1080
+                  url: https://sun9-72.userapi.com/impg/NmMADG9KQ1EecLSInA-LL0HCnyevkWfF0qzOVw/1JSlPWeHkn4.jpg?size=810x1080&quality=96&sign=f70ef95914166a3be14e8067f2e4e616&c_uniq_tag=l9O0IbHasjZV_ru-0mmwvJShpH6njc27re9GpyotkaM&type=album
+                  type: z
+                  width: 810 } }
+                { 
+                  height: 1600
+                  url: https://sun9-72.userapi.com/impg/NmMADG9KQ1EecLSInA-LL0HCnyevkWfF0qzOVw/1JSlPWeHkn4.jpg?size=1200x1600&quality=96&sign=44f88fa538115b273cbdefee92c8f726&c_uniq_tag=6XViFxE0uHmOqgpDHOv5PiPmJqgjau5bRB9OckZS2dE&type=album
+                  type: w
+                  width: 1200 } }
+                { 
+                  height: 173
+                  url: https://sun9-72.userapi.com/impg/NmMADG9KQ1EecLSInA-LL0HCnyevkWfF0qzOVw/1JSlPWeHkn4.jpg?size=130x173&quality=96&sign=fa0fb9c85bd1b1df2eed747198cb9676&c_uniq_tag=aGzpzTETWyDvwQ_8J3epAs7B60SC30Ht-WkPrskJIug&type=album
+                  type: o
+                  width: 130 } }
+                { 
+                  height: 267
+                  url: https://sun9-72.userapi.com/impg/NmMADG9KQ1EecLSInA-LL0HCnyevkWfF0qzOVw/1JSlPWeHkn4.jpg?size=200x267&quality=96&sign=87f2829570b061c488d95fdc864921cb&c_uniq_tag=tj8K9l-Wd4p_GyNJaq8EgDcnidVHMoGYD1JO_u8spc0&type=album
+                  type: p
+                  width: 200 } }
+                { 
+                  height: 427
+                  url: https://sun9-72.userapi.com/impg/NmMADG9KQ1EecLSInA-LL0HCnyevkWfF0qzOVw/1JSlPWeHkn4.jpg?size=320x427&quality=96&sign=1f95a385344ed328625650a60f507b7e&c_uniq_tag=HueMlHmLbRurSg9FIw7S8z-MhaJO-vbDlHLpSF9rMhc&type=album
+                  type: q
+                  width: 320 } }
+                { 
+                  height: 680
+                  url: https://sun9-72.userapi.com/impg/NmMADG9KQ1EecLSInA-LL0HCnyevkWfF0qzOVw/1JSlPWeHkn4.jpg?size=510x680&quality=96&sign=6fac9f5190753cf35ae257510d604d86&c_uniq_tag=Wp8aFMAH8Zw44NSRNWOWWWtmqQpo5RBT72Tn6pzEDJc&type=album
+                  type: r
+                  width: 510 } }
+              text:  } } }
+          { 
+            type: photo
+            photo: 
+              album_id: -3
+              date: 1637526398
+              id: 457241461
+              owner_id: 235869919
+              has_tags: False
+              access_key: c8531c0afd3c8bfbcc
+              sizes: 
+                { 
+                  height: 75
+                  url: https://sun9-32.userapi.com/impg/013qdDlm69wYPsUEBihbOj1Wdwxkr_1Z7Z2huw/vKBOq2EVOJs.jpg?size=56x75&quality=96&sign=cd433942e40c7dbf599db1c2420cd427&c_uniq_tag=4Z4reg0038ksHDZFYLugeEGOXnsJA4kAj7lVG-Lg8R8&type=album
+                  type: s
+                  width: 56 } }
+                { 
+                  height: 130
+                  url: https://sun9-32.userapi.com/impg/013qdDlm69wYPsUEBihbOj1Wdwxkr_1Z7Z2huw/vKBOq2EVOJs.jpg?size=97x130&quality=96&sign=6c4cb162ad83efd2eab00e4f0cd9db48&c_uniq_tag=bkvZYUKLMevo6stjgPzFT5N3i8XaRHyvCUUGR0Ni2Ec&type=album
+                  type: m
+                  width: 97 } }
+                { 
+                  height: 604
+                  url: https://sun9-32.userapi.com/impg/013qdDlm69wYPsUEBihbOj1Wdwxkr_1Z7Z2huw/vKBOq2EVOJs.jpg?size=453x604&quality=96&sign=750eaeb728d51fbf7b074d25052f286f&c_uniq_tag=MWvvsWnAbuWnG--TMXJoFUYfRMLMdi7Egya5O2-flO4&type=album
+                  type: x
+                  width: 453 } }
+                { 
+                  height: 807
+                  url: https://sun9-32.userapi.com/impg/013qdDlm69wYPsUEBihbOj1Wdwxkr_1Z7Z2huw/vKBOq2EVOJs.jpg?size=605x807&quality=96&sign=75e81175267e3ca9f31f41ab02354570&c_uniq_tag=ibvan14MfgJS0jJSZatUJkx6bXiE4NZkvoHJbDkzHUo&type=album
+                  type: y
+                  width: 605 } }
+                { 
+                  height: 1080
+                  url: https://sun9-32.userapi.com/impg/013qdDlm69wYPsUEBihbOj1Wdwxkr_1Z7Z2huw/vKBOq2EVOJs.jpg?size=810x1080&quality=96&sign=d7cc5580ab92eb454e812bc7f816ea13&c_uniq_tag=i4GN0umJSW3M7bfjQSLeYWeksBsS2hOugfTMT6kJ0Ig&type=album
+                  type: z
+                  width: 810 } }
+                { 
+                  height: 1600
+                  url: https://sun9-32.userapi.com/impg/013qdDlm69wYPsUEBihbOj1Wdwxkr_1Z7Z2huw/vKBOq2EVOJs.jpg?size=1200x1600&quality=96&sign=1a1a0bf09aef69b70f26d118b3efc002&c_uniq_tag=D5H7dttB3dkfZScC2oivKsTlwQOs6HMrrda6gCDDplM&type=album
+                  type: w
+                  width: 1200 } }
+                { 
+                  height: 173
+                  url: https://sun9-32.userapi.com/impg/013qdDlm69wYPsUEBihbOj1Wdwxkr_1Z7Z2huw/vKBOq2EVOJs.jpg?size=130x173&quality=96&sign=0677c1968ce2519b57cce737c65534d7&c_uniq_tag=N37YmF9Pq75VAXhYjgQeyjoY-Kb3a7mdZoi4lAPO2lw&type=album
+                  type: o
+                  width: 130 } }
+                { 
+                  height: 267
+                  url: https://sun9-32.userapi.com/impg/013qdDlm69wYPsUEBihbOj1Wdwxkr_1Z7Z2huw/vKBOq2EVOJs.jpg?size=200x267&quality=96&sign=0caa8e5afc60e1c9dc092ced879edbf5&c_uniq_tag=2svbfrtcLjQTF5ywVECFcIBu0RohTumnq7yXN76oxIE&type=album
+                  type: p
+                  width: 200 } }
+                { 
+                  height: 427
+                  url: https://sun9-32.userapi.com/impg/013qdDlm69wYPsUEBihbOj1Wdwxkr_1Z7Z2huw/vKBOq2EVOJs.jpg?size=320x427&quality=96&sign=ee85717ba1615ea211e1270779ca4ad6&c_uniq_tag=MXxuDapwra6vPSaCCTNzy2oAriOOGGVyubzi_l4ypbg&type=album
+                  type: q
+                  width: 320 } }
+                { 
+                  height: 680
+                  url: https://sun9-32.userapi.com/impg/013qdDlm69wYPsUEBihbOj1Wdwxkr_1Z7Z2huw/vKBOq2EVOJs.jpg?size=510x680&quality=96&sign=7b919a8657d2b1ebdf943169c8efaf5a&c_uniq_tag=_MI4BBEZtx_DrSg4K4D_sHjoV9jXayfeFxOPyhiOg0s&type=album
+                  type: r
+                  width: 510 } }
+              text:  } } }
+        conversation_message_id: 59562
+        id: 219945
+        peer_id: 2000000113 } }
+    id: 219953
+    peer_id: 2000000173 } } }
+
+conversation: 
+  peer: 
+    id: 350914216
+    type: user
+    local_id: 350914216 }
+  last_message_id: 219940
+  in_read: 219940
+  out_read: 219940
+  sort_id: 
+    major_id: 0
+    minor_id: 219940 }
+  last_conversation_message_id: 162
+  in_read_cmid: 162
+  out_read_cmid: 162
+  is_marked_unread: False
+  important: False
+  can_write: 
+    allowed: True } }
+last_message: 
+  date: 1637525686
+  from_id: 272986958
+  id: 219940
+  out: 1
+  peer_id: 350914216
+  text: Спокойной
+  attachments: 
+  conversation_message_id: 162
+  fwd_messages: 
+  important: False
+  is_hidden: False
+  random_id: 1379594643 } }
+
+conversation: 
+  peer: 
+    id: 517301747
+    type: user
+    local_id: 517301747 }
+  last_message_id: 219913
+  in_read: 219913
+  out_read: 219913
+  sort_id: 
+    major_id: 0
+    minor_id: 219913 }
+  last_conversation_message_id: 5
+  in_read_cmid: 5
+  out_read_cmid: 5
+  is_marked_unread: False
+  important: False
+  can_write: 
+    allowed: True } }
+last_message: 
+  date: 1637524261
+  from_id: 517301747
+  id: 219913
+  out: 0
+  peer_id: 517301747
+  text: О спасибо✊
+  attachments: 
+  conversation_message_id: 5
+  fwd_messages: 
+  important: False
+  is_hidden: False
+  random_id: 0 } }
+
+conversation: 
+  peer: 
+    id: 2000000163
+    type: chat
+    local_id: 163 }
+  last_message_id: 219894
+  in_read: 219894
+  out_read: 219894
+  sort_id: 
+    major_id: 0
+    minor_id: 219887 }
+  last_conversation_message_id: 4434
+  in_read_cmid: 4434
+  out_read_cmid: 4434
+  is_marked_unread: False
+  important: False
+  push_settings: 
+    disabled_forever: True
+    no_sound: True
+    disabled_mentions: False
+    disabled_mass_mentions: False }
+  can_write: 
+    allowed: True }
+  chat_settings: 
+    owner_id: 62153546
+    title: TenSing
+    state: in
+    acl: 
+      can_change_info: True
+      can_change_invite_link: False
+      can_change_pin: True
+      can_invite: True
+      can_promote_users: False
+      can_see_invite_link: False
+      can_moderate: False
+      can_copy_chat: False
+      can_call: True
+      can_use_mass_mentions: True
+      can_change_style: True }
+    members_count: 66
+    pinned_message: 
+      date: 1612695483
+      from_id: 62153546
+      id: 0
+      peer_id: 2000000163
+      text: Гугл-диск https://drive.google.com/drive/mobile/folders/1t5RgIV47jL4331GjDVpRbnOoe-E2QBKi?usp=sharing
+      attachments: 
+      conversation_message_id: 3317 }
+    photo: 
+      photo_50: https://sun1-28.userapi.com/s/v1/if1/BlH8YKvijKTHlFh-Sid8k5pbRNOYUu-Txl10cQVEGcg62T7PbDHYjoLvQXKoXqNr1T8b4xpV.jpg?size=50x0&quality=96&crop=0,0,1080,1080&ava=1
+      photo_100: https://sun1-28.userapi.com/s/v1/if1/1FDzyR0_PgVyUAmmaxKkAXL-N7P4KT6-cq3YwIZAVjjZk2SG78IjeEGjXaaTKsOCY3jgejpD.jpg?size=100x0&quality=96&crop=0,0,1080,1080&ava=1
+      photo_200: https://sun1-28.userapi.com/s/v1/if1/zsttP7TPSxr9h3HWhBm6NZP_grqmxWvraBQ1J96tSVGpfdw_ZBC-llW3q0usVd2EoLCI7uiF.jpg?size=200x0&quality=96&crop=0,0,1080,1080&ava=1
+      is_default_photo: False
+      is_default_call_photo: False }
+    active_ids: 
+      { 531717644 }
+      { 327313988 }
+      { 547081653 }
+      { 349059354 }
+    is_group_channel: False
+    is_disappearing: False
+    is_service: False } }
+last_message: 
+  date: 1637510536
+  from_id: 227322305
+  id: 219894
+  out: 0
+  peer_id: 2000000163
+  text: 
+  action: 
+    type: chat_kick_user
+    member_id: 227322305 }
+  attachments: 
+  conversation_message_id: 4434
+  fwd_messages: 
+  important: False
+  is_hidden: True
+  random_id: 0 } }
+
+conversation: 
+  peer: 
+    id: 452720262
+    type: user
+    local_id: 452720262 }
+  last_message_id: 219881
+  in_read: 219881
+  out_read: 219881
+  sort_id: 
+    major_id: 0
+    minor_id: 219881 }
+  last_conversation_message_id: 353
+  in_read_cmid: 353
+  out_read_cmid: 353
+  is_marked_unread: False
+  important: False
+  can_write: 
+    allowed: True } }
+last_message: 
+  date: 1637496987
+  from_id: 272986958
+  id: 219881
+  out: 1
+  peer_id: 452720262
+  text: Новый этап
+  attachments: 
+  conversation_message_id: 353
+  fwd_messages: 
+  important: False
+  is_hidden: False
+  random_id: 1275089117 } }
+
+conversation: 
+  peer: 
+    id: -141127580
+    type: group
+    local_id: 141127580 }
+  last_message_id: 219725
+  in_read: 219725
+  out_read: 219725
+  sort_id: 
+    major_id: 0
+    minor_id: 219725 }
+  last_conversation_message_id: 67
+  in_read_cmid: 67
+  out_read_cmid: 67
+  is_marked_unread: False
+  important: False
+  push_settings: 
+    disabled_forever: True
+    no_sound: True
+    disabled_mentions: False
+    disabled_mass_mentions: False }
+  can_write: 
+    allowed: True } }
+last_message: 
+  date: 1637400098
+  from_id: 272986958
+  id: 219725
+  out: 1
+  peer_id: -141127580
+  text: tuntun
+  attachments: 
+  conversation_message_id: 67
+  fwd_messages: 
+  important: False
+  is_hidden: False
+  random_id: -1694279008 } }
+
+conversation: 
+  peer: 
+    id: 100
+    type: user
+    local_id: 100 }
+  last_message_id: 219681
+  in_read: 219681
+  out_read: 219681
+  sort_id: 
+    major_id: 0
+    minor_id: 219681 }
+  last_conversation_message_id: 9
+  in_read_cmid: 9
+  out_read_cmid: 9
+  is_marked_unread: False
+  important: False
+  can_write: 
+    allowed: True } }
+last_message: 
+  date: 1637352836
+  from_id: 100
+  id: 219681
+  out: 0
+  peer_id: 100
+  text: Your password has been changed.
+  attachments: 
+  conversation_message_id: 9
+  fwd_messages: 
+  important: False
+  is_hidden: False
+  random_id: 0 } }
+
+conversation: 
+  peer: 
+    id: 271833861
+    type: user
+    local_id: 271833861 }
+  last_message_id: 219603
+  in_read: 219603
+  out_read: 219603
+  sort_id: 
+    major_id: 0
+    minor_id: 219603 }
+  last_conversation_message_id: 853
+  in_read_cmid: 853
+  out_read_cmid: 853
+  is_marked_unread: False
+  important: False
+  can_write: 
+    allowed: True } }
+last_message: 
+  date: 1637332348
+  from_id: 271833861
+  id: 219603
+  out: 0
+  peer_id: 271833861
+  text: Неделю
+  attachments: 
+  conversation_message_id: 853
+  fwd_messages: 
+  important: False
+  is_hidden: False
+  random_id: 0 } }
+
+conversation: 
+  peer: 
+    id: 415952815
+    type: user
+    local_id: 415952815 }
+  last_message_id: 219575
+  in_read: 219575
+  out_read: 219575
+  sort_id: 
+    major_id: 0
+    minor_id: 219575 }
+  last_conversation_message_id: 69
+  in_read_cmid: 69
+  out_read_cmid: 69
+  is_marked_unread: False
+  important: False
+  can_write: 
+    allowed: True } }
+last_message: 
+  date: 1637317850
+  from_id: 415952815
+  id: 219575
+  out: 0
+  peer_id: 415952815
+  text: https://music.yandex.ru/album/19384557?utm_medium=copy_link
+  attachments: 
+    { 
+      type: link
+      link: 
+        url: https://music.yandex.ru/album/19384557?utm_medium=copy_link
+        title: Выход в город — Noize MC
+        caption: music.yandex.ru
+        description: Слушайте на Яндекс.Музыке
+        photo: 
+          album_id: -2
+          date: 1637304970
+          id: 457242668
+          owner_id: 100
+          has_tags: False
+          sizes: 
+            { 
+              height: 480
+              url: https://sun9-48.userapi.com/KVOXbiJ42WrxNHpnqW8wigAc76Arpac_Q9kmrw/kxW5y7u8qjs.jpg
+              type: k
+              width: 1000 } }
+            { 
+              height: 240
+              url: https://sun9-59.userapi.com/0WoBoZVaHYNcbxE7HhNbSqkqkRFUN0FHaPUa6g/K4w3nSKe_x0.jpg
+              type: l
+              width: 537 } }
+            { 
+              height: 130
+              url: https://sun9-18.userapi.com/IiwNKfiFNl5ywvRjaUfMNyPo3QVX-4Fc8YaCTQ/bFqExy_fYBY.jpg
+              type: m
+              width: 130 } }
+            { 
+              height: 260
+              url: https://sun9-12.userapi.com/Ek7xvXv-DNNMqz-AA1XoyccP9N2YVwvZElE9wg/86_Elx11ty4.jpg
+              type: p
+              width: 260 } }
+            { 
+              height: 75
+              url: https://sun9-24.userapi.com/kYX8LvgCeTJPNrgTS0KEqwmpktLOwUNVk7qRWg/iGrQuqKQpho.jpg
+              type: s
+              width: 75 } }
+            { 
+              height: 150
+              url: https://sun9-30.userapi.com/I_hAwEiie-ByMb0YTxKQnyWykna1JtYAt0dOPQ/udxePq4-QaU.jpg
+              type: x
+              width: 150 } }
+          text: 
+          user_id: 100 }
+        is_favorite: False } } }
+  conversation_message_id: 69
+  fwd_messages: 
+  important: False
+  is_hidden: False
+  random_id: 0 } }
+
+conversation: 
+  peer: 
+    id: 2000000174
+    type: chat
+    local_id: 174 }
+  last_message_id: 219376
+  in_read: 219376
+  out_read: 219376
+  sort_id: 
+    major_id: 0
+    minor_id: 219376 }
+  last_conversation_message_id: 55
+  in_read_cmid: 55
+  out_read_cmid: 55
+  is_marked_unread: False
+  important: False
+  can_write: 
+    allowed: True }
+  chat_settings: 
+    owner_id: 350914216
+    title: имка сергиев посад
+    state: in
+    acl: 
+      can_change_info: True
+      can_change_invite_link: False
+      can_change_pin: True
+      can_invite: True
+      can_promote_users: False
+      can_see_invite_link: True
+      can_moderate: False
+      can_copy_chat: False
+      can_call: True
+      can_use_mass_mentions: True
+      can_change_style: True }
+    members_count: 3
+    active_ids: 
+      { 370402017 }
+      { 350914216 }
+    is_group_channel: False
+    is_disappearing: False
+    is_service: False } }
+last_message: 
+  date: 1637182907
+  from_id: 350914216
+  id: 219376
+  out: 0
+  peer_id: 2000000174
+  text: 
+  attachments: 
+    { 
+      type: audio_message
+      audio_message: 
+        duration: 5
+        id: 619750861
+        link_mp3: https://psv4.userapi.com/c525332//u350914216/audiomsg/d36/316b6230a1.mp3
+        link_ogg: https://psv4.userapi.com/c525332//u350914216/audiomsg/d36/316b6230a1.ogg
+        owner_id: 350914216
+        access_key: e4d036ee5af8f6bdd4
+        transcript: А сейчас ловлю сейчас. Спокойной ночи. Дай Бог дожить на выходных.
+        transcript_state: done
+        waveform: 
+          { 0 }
+          { 2 }
+          { 0 }
+          { 0 }
+          { 2 }
+          { 2 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 3 }
+          { 12 }
+          { 3 }
+          { 1 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 7 }
+          { 0 }
+          { 0 }
+          { 1 }
+          { 19 }
+          { 4 }
+          { 5 }
+          { 2 }
+          { 0 }
+          { 0 }
+          { 4 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 6 }
+          { 0 }
+          { 1 }
+          { 0 }
+          { 0 }
+          { 4 }
+          { 4 }
+          { 0 }
+          { 1 }
+          { 4 }
+          { 3 }
+          { 1 }
+          { 18 }
+          { 5 }
+          { 1 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 3 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 4 }
+          { 0 }
+          { 3 }
+          { 31 }
+          { 14 }
+          { 2 }
+          { 2 }
+          { 7 }
+          { 7 }
+          { 1 }
+          { 3 }
+          { 1 }
+          { 1 }
+          { 5 }
+          { 3 }
+          { 0 }
+          { 3 }
+          { 4 }
+          { 6 }
+          { 1 }
+          { 0 }
+          { 2 }
+          { 9 }
+          { 1 }
+          { 0 }
+          { 0 }
+          { 1 }
+          { 0 }
+          { 1 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 1 }
+          { 0 }
+          { 0 }
+          { 0 }
+          { 0 } } } }
+  conversation_message_id: 55
+  fwd_messages: 
+  important: False
+  is_hidden: False
+  random_id: 0
+  was_listened: True } }
+
+conversation: 
+  peer: 
+    id: 370402017
+    type: user
+    local_id: 370402017 }
+  last_message_id: 219297
+  in_read: 219297
+  out_read: 219297
+  sort_id: 
+    major_id: 0
+    minor_id: 219297 }
+  last_conversation_message_id: 152
+  in_read_cmid: 152
+  out_read_cmid: 152
+  is_marked_unread: False
+  important: False
+  can_write: 
+    allowed: True } }
+last_message: 
+  date: 1637181475
+  from_id: 272986958
+  id: 219297
+  out: 1
+  peer_id: 370402017
+  text: В тепле и уюте было бы получше конечно, но и погулять у меня нет проблем
+  attachments: 
+  conversation_message_id: 152
+  fwd_messages: 
+  important: False
+  is_hidden: False
+  random_id: 1014438563 } }
+
+conversation: 
+  peer: 
+    id: 2000000167
+    type: chat
+    local_id: 167 }
+  last_message_id: 219154
+  in_read: 219154
+  out_read: 219154
+  sort_id: 
+    major_id: 0
+    minor_id: 219154 }
+  last_conversation_message_id: 99
+  in_read_cmid: 99
+  out_read_cmid: 99
+  is_marked_unread: False
+  important: False
+  push_settings: 
+    disabled_forever: True
+    no_sound: True
+    disabled_mentions: False
+    disabled_mass_mentions: False }
+  can_write: 
+    allowed: True }
+  chat_settings: 
+    owner_id: 272986958
+    title: Прога WEB 11E 2021-2022
+    state: in
+    acl: 
+      can_change_info: True
+      can_change_invite_link: True
+      can_change_pin: True
+      can_invite: True
+      can_promote_users: True
+      can_see_invite_link: True
+      can_moderate: True
+      can_copy_chat: True
+      can_call: True
+      can_use_mass_mentions: True
+      can_change_style: True }
+    members_count: 10
+    pinned_message: 
+      date: 1632914603
+      from_id: 249908846
+      id: 212880
+      peer_id: 2000000167
+      text: Ссылки на документацию (часть 1):
+- Nest.JS https://docs.nestjs.com/
+- Handlebars (шаблоны) https://handlebarsjs.com/guide/
+
+Для того чтобы сделать ДЗ, вам потребуется прочитать как минимум основы Handlebars
+      attachments: 
+        { 
+          type: link
+          link: 
+            url: https://handlebarsjs.com/guide/
+            title: Introduction | Handlebars
+            caption: handlebarsjs.com
+            description: 
+            is_favorite: False } } }
+      conversation_message_id: 39
+      fwd_messages: 
+      geo: 
+        coordinates: 
+          latitude: 0.0
+          longitude: 0.0 }
+        type:  } }
+    active_ids: 
+      { 273924980 }
+      { 321885380 }
+      { 412189174 }
+      { 365857713 }
+    is_group_channel: False
+    permissions: 
+      invite: all
+      change_info: all
+      change_pin: all
+      use_mass_mentions: all
+      see_invite_link: owner
+      call: all
+      change_admins: owner
+      change_style: all }
+    is_disappearing: False
+    is_service: False } }
+last_message: 
+  date: 1637133117
+  from_id: 273924980
+  id: 219154
+  out: 0
+  peer_id: 2000000167
+  text: 1) Сделать CheckBox для TODO, который будет сменять состояния (возможно через on:...)
+2) Сделать режим редактирования
+[]{Text}[Edit][delete]
+|
+\/
+[]{Input Tex}[Save][Discard]
+Сделать через bind:todo={todo}
+  attachments: 
+  conversation_message_id: 99
+  fwd_messages: 
+  important: False
+  is_hidden: False
+  random_id: 0 } }
