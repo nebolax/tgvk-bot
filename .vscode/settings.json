@@ -1,6 +1,6 @@
 {
     "files.exclude": {
-        "*/launch.json": true,
+        "*/*.json": true,
         "*/__pycache__/": true,
         "*/*/__pycache__/": true,
         "__pycache__/": true,
@@ -9,7 +9,7 @@
         "json/": true,
         // "processing/": true,
         "store/": true,
-        ".gitignore": true,
+        // ".gitignore": true,
         "events.py": true,
         "*.log": true,
         "experiments/": true,
