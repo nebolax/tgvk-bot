@@ -14,5 +14,5 @@ def new_user(user: User) -> None:
     get_session().add(user)
 
 
-def all_users_ids() -> list[int]:
-    return list(map(lambda val: val.tg_id, get_session().query(User)))
+def all_users() -> list[User]:
+    return get_session().query(User).all()

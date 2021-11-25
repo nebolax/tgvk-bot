@@ -1,9 +1,9 @@
-import g
+import g, events
 import store
 from . import *
 
 
-@g.ee.on('vk.msg')
+@events.on('vk.msg')
 def new_vk_message(inp_msg: list):
     obj_msg = {
         'flags': '{0:10b}'.format(inp_msg[1])[::-1][:10],

@@ -1,10 +1,13 @@
-from . import *
-import g
-import api
-import store
 import re
 
-@g.ee.on('tg.msg')
+import api
+import events
+import g
+
+from .msg_proc import *
+
+
+@events.on('tg.msg')
 def tg_route(msg: dict):
     if msg['chat']['id'] in g.state['waiting_token']:
         token_msg(msg)
@@ -24,9 +27,4 @@ def token_msg(msg: dict):
         api.send_tg_message(msg['chat']['id'], {
             'text': 'Некорректная ссылка. Попробуйте еще раз'})
     else:
-        store.new_user(msg['from']['id'], userid_search.group(
-            1), token_search.group(1))
-        api.start_new_vklongpoll(msg['from']['id'])
-        api.send_tg_message(msg['chat']['id'], {
-                        'text': 'Поздравляю с успешной авторизацией!'})
-        g.state['waiting_token'] = list(filter(lambda chatid: chatid != msg['chat']['id'], g.state['waiting_token']))
+        token_passed(msg, userid_search.group(1), token_search.group(1))

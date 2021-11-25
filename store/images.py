@@ -3,8 +3,8 @@ from sqlalchemy import *
 import enum
 
 class ChatType(enum.Enum):
-    private = 0
-    chat = 1
+    Private = 0
+    Group = 1
 
 Base = declarative_base()
 
@@ -26,14 +26,12 @@ class Route(Base):
     vk_peer = Column(Integer)
     chat_type = Enum(ChatType)
     tg_userid = Column(Integer)
-    vk_userid = Column(Integer)
 
-    def __init__(self, tg_chat_id: int, vk_peer: int, chat_type: ChatType, tg_userid: int, vk_userid: int):
+    def __init__(self, tg_chat_id: int, vk_peer: int, chat_type: ChatType, tg_userid: int):
         self.tg_chat_id = tg_chat_id    
         self.vk_peer = vk_peer
         self.chat_type = chat_type
         self.tg_userid = tg_userid
-        self.vk_userid = vk_userid
 
 class MessageMatch(Base):
     __tablename__ = 'message_matches'

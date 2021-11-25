@@ -9,7 +9,7 @@ _level = logging.DEBUG
 logs.setLevel(_level)
 
 _stream_handler = logging.StreamHandler()
-_file_handler = logging.FileHandler('logs.txt', 'wt')
+_file_handler = logging.FileHandler('logs.log', 'wt')
 
 _stream_handler.setFormatter(logging.Formatter(_uform))
 _file_handler.setFormatter(logging.Formatter(_uform))

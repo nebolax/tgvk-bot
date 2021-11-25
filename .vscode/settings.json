@@ -2,13 +2,16 @@
     "files.exclude": {
         "*/launch.json": true,
         "*/__pycache__/": true,
+        "*/*/__pycache__/": true,
         "__pycache__/": true,
-        "api/": true,
+        // "api/": true,
         "g/": true,
-        "json/": true,
-        "processing/": true,
+        // "json/": true,
+        // "processing/": true,
         "store/": true,
         ".gitignore": true,
-        // "*.*": true
+        // "events.py": true,
+        "*.log": true,
+        "experiments/": true,
     },
 }

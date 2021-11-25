@@ -1,3 +1,1 @@
-from .commands_proc import *
-from .msg_proc import *
-from .msg_routing import *
+from .msg_routing import tg_route

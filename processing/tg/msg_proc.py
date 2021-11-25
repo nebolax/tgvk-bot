@@ -1,5 +1,6 @@
-from store import routes
-from . import *
+from store import routes, User
+import store, api
+from .commands_proc import *
 import g
 
 
@@ -37,3 +38,12 @@ def msg_with_botcmd(msg: dict, cmd_offset: int, cmd_length: int):
     except Exception as e:
         g.logs.warning(
             f'Failed to process bot command {cmd_text} of message {msg}. Exception: {e}')
+
+def token_passed(msg: dict, vk_userid: int, vk_token: str):
+    new_user = User(msg['from']['id'], vk_userid, vk_token)
+    store.new_user(new_user)
+    api.start_new_vklongpoll(new_user)
+    api.send_tg_message(msg['chat']['id'], {
+        'text': 'Поздравляю с успешной авторизацией!'})
+    g.state['waiting_token'] = list(
+        filter(lambda chatid: chatid != msg['chat']['id'], g.state['waiting_token']))

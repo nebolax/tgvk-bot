@@ -1,25 +1,24 @@
 import json
-import enum
 from threading import Lock
 
 
-# class SavingDict(dict):
-#     def __init__(self, path: str):
-#         self.path = 'json/' + path
-#         with open(self.path) as f:
-#             loaded = json.loads(f.read())
-#             super(SavingDict, self).__init__(loaded)
+class SavingDict(dict):
+    def __init__(self, path: str):
+        self.path = 'json/' + path
+        with open(self.path) as f:
+            loaded = json.loads(f.read())
+            super(SavingDict, self).__init__(loaded)
 
-#     def __setitem__(self, item, value):
-#         super(SavingDict, self).__setitem__(item, value)
-#         with open(self.path, 'w') as f:
-#             f.write(json.dumps(self))
+    def __setitem__(self, item, value):
+        super(SavingDict, self).__setitem__(item, value)
+        with open(self.path, 'w') as f:
+            f.write(json.dumps(self))
 
-#     def __getitem__(self, key):
-#         try:
-#             return super().__getitem__(key)
-#         except:
-#             return None
+    def __getitem__(self, key):
+        try:
+            return super().__getitem__(key)
+        except:
+            return None
 
 
 def dict_to_str(data, tabs=0):

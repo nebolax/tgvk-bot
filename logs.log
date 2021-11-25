@@ -1,0 +1,3 @@
+2021-11-25 20:55:09,538-INFO:operating.py._init_operating.13 - Initializing db...
+2021-11-25 20:55:13,845-DEBUG:network.py._single_tg_update.105 - Got new message from telegram: {'update_id': 441251592, 'message': {'message_id': 594, 'from': {'id': 327150749, 'is_bot': False, 'first_name': 'Alexey', 'last_name': 'Nebolsin', 'username': 'nebolax', 'language_code': 'en'}, 'chat': {'id': -785949970, 'title': 'Mem-acho test-group', 'type': 'group', 'all_members_are_administrators': True}, 'date': 1637862913, 'text': 'haha'}}
+2021-11-25 20:55:15,392-DEBUG:network.py._single_vk_update.98 - Got new message from vk: [4, 220422, 8195, 2000000173, 1637862915, 'Mem-acho', 'haha', {'from': '272986958'}]
