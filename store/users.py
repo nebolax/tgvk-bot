@@ -11,7 +11,7 @@ def user_by_vkid(vkid: int) -> User:
 
 
 def new_user(user: User) -> None:
-    get_session().add(user)
+    get_session().merge(user)
 
 
 def all_users() -> list[User]:

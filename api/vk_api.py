@@ -16,18 +16,18 @@ def vk_person_name(vk_id: int, req_user: User):
     g.logs.debug(f'Vk id: {vk_id}')
     # Person can be a human or community
     if vk_id > 0:
-        resp = net._vk_method('users.get', req_user, {
+        resp = net._vk_method('users.get', req_user.vk_token, {
             'user_ids': vk_id
         })['response'][0]
         return resp['first_name'] + ' ' + resp['last_name']
     else:
-        return net._vk_method('groups.getById', req_user, {
+        return net._vk_method('groups.getById', req_user.vk_token, {
             'group_ids': -vk_id
         })['response'][0]['name']
 
 
 def vk_msg_attachments(message_id: int, req_user: User):
-    resp = net._vk_method('messages.getById', req_user, {
+    resp = net._vk_method('messages.getById', req_user.vk_token, {
         'message_ids': message_id
     })
     if resp['response']['items'] == []:

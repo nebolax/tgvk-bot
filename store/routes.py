@@ -23,4 +23,4 @@ def _chat_type(vk_peer: int) -> ChatType:
 
 
 def new_route(route: Route):
-    get_session().add(route)
+    get_session().merge(route)

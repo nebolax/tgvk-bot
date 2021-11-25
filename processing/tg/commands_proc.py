@@ -29,4 +29,5 @@ def proc_vkpeer_command(text_args: str, msg: dict):
             vk_peer += 2000000000
             chat_type = ChatType.Group
 
-    store.new_route(Route(msg['chat']['id'], vk_peer, chat_type, msg['from']['id']))
+    r = Route(msg['chat']['id'], vk_peer, chat_type, msg['from']['id'])
+    store.new_route(r)

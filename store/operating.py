@@ -1,11 +1,13 @@
 from sqlalchemy.orm import sessionmaker, scoped_session, session
 from sqlalchemy import create_engine
 
-from .images import Base
 import g
 
 _SessionsManager: scoped_session = None
+def get_session() -> session.Session:
+    return _SessionsManager()
 
+from .images import Base
 
 def _init_operating():
     user, pwd, host, port, dbname = input(
@@ -27,5 +29,3 @@ def commit():
     _SessionsManager.remove()
 
 
-def get_session() -> session.Session:
-    return _SessionsManager()
