@@ -1,31 +1,19 @@
+from .images import Base
 from sqlalchemy.orm import sessionmaker, scoped_session, session
 from sqlalchemy import create_engine
 
-import g
+sql: scoped_session = None
 
-_SessionsManager: scoped_session = None
-def get_session() -> session.Session:
-    return _SessionsManager()
-
-from .images import Base
-
-def _init_operating():
-    user, pwd, host, port, dbname = input(
-        'Enter database credentials:').split()
-    g.logs.info('Initializing db...')
+def init_database():
+    user, pwd, host, port, dbname = 'nebolax Star1569 mydb.cnrri9sfbvjr.eu-west-2.rds.amazonaws.com 3306 develop_db'.split()
 
     engine = create_engine(f'mysql://{user}:{pwd}@{host}:{port}/{dbname}')
     Base.metadata.create_all(engine)
 
-    global _SessionsManager
+    global sql
     session_factory = sessionmaker(bind=engine)
-    _SessionsManager = scoped_session(session_factory)
+    sql = scoped_session(session_factory)
+    
+    print(f'db inited {sql}')
 
-
-#Работает долго! (минимум 1.5 секунды)
-def commit():
-    print('called')
-    _SessionsManager().commit()
-    _SessionsManager.remove()
-
-
+init_database()

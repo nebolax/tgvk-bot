@@ -5,7 +5,7 @@ import g
 def send_tg_message(chat_id: int, params: dict):
     params['chat_id'] = chat_id
     params['parse_mode'] = 'HTML'
-    net._tg_method('sendMessage', params)
+    return net._tg_method('sendMessage', params)['result']
 
 
 def send_tg_media(chat_id: int, caption: str, params: dict):
@@ -32,3 +32,9 @@ def get_tg_photo_link(photo_variants: list):
         g.base_tg_url + 'file/' +
         g.bot_token +
         phid_resp['file_path'])
+
+def tg_delete_msg(tg_chat_id: int, msg_id: int):
+    net._tg_method('deleteMessage', {
+        'chat_id': tg_chat_id,
+        'message_id': msg_id
+    })

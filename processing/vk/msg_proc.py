@@ -5,11 +5,11 @@ from .utils import VKMessage
 
 
 def route_vkmsg(route: Route, msg: VKMessage):
-    msg.text = f'<b>{api.vk_person_name(msg.sender_vkid, route.user())}:</b>\n' + msg.text
+    msg.text = f'<b>{api.vk_people_name(msg.sender_vkid, route.user)[0]}:</b>\n' + msg.text
     attachments = []
     if 'attach1' in msg.extra_info:
         fetched = api.vk_msg_attachments(
-            msg.msg_id, route.user())
+            msg.msg_id, route.user)
         attachments = list(map(wrap_attachment_to_send, fetched))
 
     if len(attachments) == 0:

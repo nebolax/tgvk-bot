@@ -1,14 +1,20 @@
+from dataclasses import dataclass
+import json
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import *
 import enum
+from sqlalchemy.orm import relationship
 from sqlalchemy.orm.session import Session
-from .operating import get_session
+
 
 class ChatType(enum.Enum):
-    Private = 0
-    Group = 1
+    Unset = 0
+    Private = 1
+    Group = 2
+
 
 Base = declarative_base()
+
 
 class User(Base):
     __tablename__ = 'users'
@@ -21,6 +27,7 @@ class User(Base):
         self.vk_id = vk_id
         self.vk_token = vk_token
 
+
 class Route(Base):
     __tablename__ = 'routes'
 
@@ -28,24 +35,33 @@ class Route(Base):
     vk_peer = Column(Integer)
     chat_type = Column('chat_type', Enum(ChatType))
     tg_userid = Column(Integer, ForeignKey('users.tg_id'))
+    user: User = relationship('User')
 
     def __init__(self, tg_chat_id: int, vk_peer: int, chat_type: ChatType, tg_userid: int):
-        self.tg_chat_id = tg_chat_id    
+        self.tg_chat_id = tg_chat_id
         self.vk_peer = vk_peer
         self.chat_type = chat_type
         self.tg_userid = tg_userid
 
-    def user(self) -> User:
-        return get_session().query(User).filter(User.tg_id == self.tg_userid).first()
 
 class MessageMatch(Base):
     __tablename__ = 'message_matches'
 
     tg_msg_id = Column(Integer, primary_key=True)
     vk_msg_id = Column(Integer)
-    user_id = Column(Integer)
+    user_id = Column(Integer, ForeignKey('users.tg_id'))
+    user: User = relationship('User')
 
     def __init__(self, tg_msg_id: int, vk_msg_id: int, user_id: int):
         self.tg_msg_id = tg_msg_id
         self.vk_msg_id = vk_msg_id
         self.user_id = user_id
+
+########## Типы, не хранящеися в базе данных ###########
+
+
+@dataclass
+class VkConversation:
+    peer: int
+    title: str
+    chat_type: ChatType
