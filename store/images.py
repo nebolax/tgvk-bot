@@ -1,8 +1,8 @@
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import *
 import enum
-from .operating import get_session
 from sqlalchemy.orm.session import Session
+from .operating import get_session
 
 class ChatType(enum.Enum):
     Private = 0

@@ -1,10 +1,12 @@
-import g, events
+import g
+import events
 import store
 from store.images import ChatType, User
 from . import *
 from dataclasses import dataclass
 from .utils import VKMessage
 from .msg_proc import route_vkmsg
+
 
 @events.on('vk.msg')
 def new_vk_message(inp_msg: list):
@@ -20,9 +22,8 @@ def new_vk_message(inp_msg: list):
     obj_msg.text = obj_msg.text.replace('<br>', '\n')
 
     all_connected_routes = store.routes_by_vkpeer(obj_msg.peer)
-    
+
     for route in all_connected_routes:
-        g.logs.debug(f'{route.__dict__}')
         if route.chat_type == ChatType.Group:
             obj_msg.sender_vkid = int(obj_msg.extra_info['from'])
         else:
@@ -30,6 +31,6 @@ def new_vk_message(inp_msg: list):
                 obj_msg.sender_vkid = route.user().vk_id
             else:
                 obj_msg.sender_vkid = obj_msg.peer
-        g.logs.debug(route.user().__dict__)
+
         if route.user().vk_id != obj_msg.sender_vkid:
             route_vkmsg(route, obj_msg)
