@@ -32,7 +32,7 @@ There is a list of features required into bot to make it useful:
 
 Right now program runs in multithreading (tg_longpoll has personal thread and each vk user has) but I'm not very sure if this system has been working nice and smooth...
 
-###Program consists of several main modules:
+### Program consists of several main modules:
 
 - _api_ - this module realizes botapi of telegram through pure python requests module. There are 3 files:
   - network.py - does requests on lowlevel and performs longpolling of vk and telegram bot, if any new events came throws event
