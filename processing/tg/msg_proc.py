@@ -18,7 +18,7 @@ def proc_tg2vk_msg(msg: TgMsg):
     #     })
     #     return
 
-    api.send_vk_message(sql.query(Route).filter(Route.tg_chat_id == msg.route.tg_chat_id).first(), {
+    api.send_vk_message(sql.query(Route).filter(Route.tg_chat_id == msg.chat_id).first(), {
         'message': msg.text
     })
 
@@ -45,19 +45,19 @@ def msg_with_botcmd(msg: TgMsg, cmd_offset: int, cmd_length: int):
 
 def token_passed(msg: TgMsg, vk_userid: int, vk_token: str):
     new_user = User(msg.sender_id, vk_userid, vk_token)
-    store.new_user(new_user)
+    store.sql().add(new_user)
     api.start_new_vklongpoll(new_user)
     api.send_tg_message(msg.chat_id, {
         'text': 'Поздравляю с успешной авторизацией!'})
     g.state['waiting_token'] = list(
-        filter(lambda chatid: chatid != msg.route.tg_chat_id, g.state['waiting_token']))
+        filter(lambda chatid: chatid != msg.chat_id, g.state['waiting_token']))
 
 
 def token_msg(msg: TgMsg):
     token_search = re.search(r'access_token=(.+?)&', msg.text)
     userid_search = re.search(r'user_id=(.+)', msg.text)
     if token_search is None or userid_search is None:
-        api.send_tg_message(msg.route.tg_chat_id, {
+        api.send_tg_message(msg.chat_id, {
             'text': 'Некорректная ссылка. Попробуйте еще раз'})
     else:
         token_passed(msg, userid_search.group(1), token_search.group(1))

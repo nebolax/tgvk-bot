@@ -8,7 +8,7 @@
         "g/": true,
         // "processing/tg/": true,
         "processing/vk/": true,
-        "store/": true,
+        // "store/": true,
         // ".gitignore": true,
         "events.py": true,
         "*.log": true,

@@ -1,15 +1,19 @@
-2021-12-03 02:55:36,171-INFO:main.py.<module>.11 - App running...
-2021-12-03 02:55:46,257-INFO:events.py._event_proc.22 - Took 1.5275132656097412 to process event
-2021-12-03 02:55:48,704-INFO:events.py._event_proc.22 - Took 1.077507734298706 to process event
-2021-12-03 02:55:55,209-INFO:events.py._event_proc.22 - Took 0.965630292892456 to process event
-2021-12-03 02:55:59,653-INFO:events.py._event_proc.22 - Took 2.8442270755767822 to process event
-2021-12-03 02:56:06,448-INFO:events.py._event_proc.22 - Took 0.5055155754089355 to process event
-2021-12-03 02:56:16,910-INFO:events.py._event_proc.22 - Took 0.5585510730743408 to process event
-2021-12-03 02:56:19,284-INFO:events.py._event_proc.22 - Took 1.3850562572479248 to process event
-2021-12-03 02:56:21,534-INFO:events.py._event_proc.22 - Took 0.9476144313812256 to process event
-2021-12-03 02:56:24,023-INFO:events.py._event_proc.22 - Took 0.3563392162322998 to process event
-2021-12-03 02:56:24,194-INFO:events.py._event_proc.22 - Took 0.0714101791381836 to process event
-2021-12-03 02:56:28,224-INFO:events.py._event_proc.22 - Took 0.06844687461853027 to process event
-2021-12-03 02:56:32,677-INFO:events.py._event_proc.22 - Took 1.2558040618896484 to process event
-2021-12-03 02:56:37,992-INFO:events.py._event_proc.22 - Took 2.624849319458008 to process event
-2021-12-03 02:56:39,114-INFO:events.py._event_proc.22 - Took 0.5222501754760742 to process event
+2022-03-18 09:57:09,398-INFO:main.py.<module>.11 - App running...
+2022-03-18 09:57:11,418-INFO:events.py._event_proc.25 - Took 1.085331916809082 to process event
+2022-03-18 09:57:21,525-INFO:events.py._event_proc.25 - Took 0.5771782398223877 to process event
+2022-03-18 09:57:22,259-INFO:events.py._event_proc.25 - Took 0.6567933559417725 to process event
+2022-03-18 09:57:28,890-INFO:events.py._event_proc.25 - Took 0.0880429744720459 to process event
+2022-03-18 09:57:48,017-INFO:events.py._event_proc.25 - Took 1.4699287414550781 to process event
+2022-03-18 09:57:52,042-INFO:events.py._event_proc.25 - Took 1.4708962440490723 to process event
+2022-03-18 09:57:57,116-INFO:events.py._event_proc.25 - Took 0.6834650039672852 to process event
+2022-03-18 09:57:57,277-INFO:events.py._event_proc.25 - Took 0.11151289939880371 to process event
+2022-03-18 09:58:08,662-INFO:events.py._event_proc.25 - Took 0.08322739601135254 to process event
+2022-03-18 09:58:22,276-INFO:events.py._event_proc.25 - Took 0.09153342247009277 to process event
+2022-03-18 09:58:35,243-INFO:events.py._event_proc.25 - Took 0.6025791168212891 to process event
+2022-03-18 09:58:35,381-INFO:events.py._event_proc.25 - Took 0.07721471786499023 to process event
+2022-03-18 09:58:42,963-INFO:events.py._event_proc.25 - Took 0.10885167121887207 to process event
+2022-03-18 09:59:00,575-ERROR:network.py._vk_method.32 - Vk-method failed!! Response: {'error': {'error_code': 100, 'error_msg': 'One of the parameters specified was missing or invalid: message is empty or invalid', 'request_params': [{'key': 'v', 'value': '5.131'}, {'key': 'peer_id', 'value': '-141127580'}, {'key': 'random_id', 'value': '1256115250'}, {'key': 'method', 'value': 'messages.send'}, {'key': 'oauth', 'value': '1'}]}}
+2022-03-18 09:59:00,576-INFO:events.py._event_proc.25 - Took 0.5060453414916992 to process event
+2022-03-18 09:59:26,800-ERROR:network.py._vk_method.32 - Vk-method failed!! Response: {'error': {'error_code': 100, 'error_msg': 'One of the parameters specified was missing or invalid: message is empty or invalid', 'request_params': [{'key': 'v', 'value': '5.131'}, {'key': 'peer_id', 'value': '2000000173'}, {'key': 'random_id', 'value': '385498891'}, {'key': 'method', 'value': 'messages.send'}, {'key': 'oauth', 'value': '1'}]}}
+2022-03-18 09:59:26,800-INFO:events.py._event_proc.25 - Took 0.521202802658081 to process event
+2022-03-18 10:00:39,289-INFO:events.py._event_proc.25 - Took 0.0713346004486084 to process event

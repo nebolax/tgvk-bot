@@ -15,7 +15,7 @@ from .msg_proc import *
 def tg_route(inp_msg: dict):
     msg = TgMsg(inp_msg)
     if msg.chat_id in g.state['waiting_token']:
-        token_msg()
+        token_msg(msg)
     elif msg.text == '/start':
         proc_start_command(msg)
     elif msg.sender is None:
@@ -35,9 +35,13 @@ def tg_chat_choosed(inp_msg: dict):
     print(vk_peer)
     convs_vars = g.state[f'peer_setup_{source_msg.chat_id}']
     cur_conv_info = list(filter(lambda x: vk_peer == x['peer'], convs_vars))[0]
-    conv = VkConversation(cur_conv_info['peer'], cur_conv_info['title'], ChatType(cur_conv_info['chat_type']))
+    conv = VkConversation(cur_conv_info['peer'], cur_conv_info['title'], ChatType(
+        cur_conv_info['chat_type']))
 
-    db.sql.delete(db.sql.query(Route).filter(Route.tg_chat_id == source_msg.chat_id).first())
+    cur_route = db.sql.query(Route).filter(
+        Route.tg_chat_id == source_msg.chat_id).first()
+    if cur_route:
+        db.sql.delete(cur_route)
     db.sql.add(Route(source_msg.chat_id, vk_peer,
                conv.chat_type, user_id))
     db.sql.commit()
