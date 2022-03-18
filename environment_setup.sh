@@ -1,2 +1,2 @@
 mkdir json
-echo "{}" > json/state.json 
+echo "{\"waiting_token\": [], \"tg_offset\": 0}" > json/state.json

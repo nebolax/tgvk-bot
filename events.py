@@ -28,10 +28,10 @@ def _event_proc(key: str, args: list, kwargs: dict):
 def emit(key: str, *args, **kwargs):
     new_thread = False
     if not new_thread:
-        try:
-            _event_proc(key, args, kwargs)
-        except Exception as e:
-            g.logs.error(f'Error {e} occured while processing event!')
+        #try:
+        _event_proc(key, args, kwargs)
+        #except Exception as e:
+         #   g.logs.error(f'Error {e} occured while processing event!')
     else:
         tr = Thread(target=_event_proc, args=(key, args, kwargs,))
         tr.start()
