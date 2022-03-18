@@ -1,2 +1,4 @@
 sqlalchemy
-dotenv
+python-dotenv
+mysqlclient
+requests
