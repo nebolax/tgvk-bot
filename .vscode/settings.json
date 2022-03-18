@@ -3,15 +3,15 @@
     // "*/*.json": true,
     "*/__pycache__/": true,
     "*/*/__pycache__/": true,
-    "__pycache__/": true,
+    "__pycache__/": true
     // "api/": true,
-    "g/": true,
+    // "g/": true,
     // "processing/tg/": true,
-    "processing/vk/": true,
+    // "processing/vk/": true,
     // "store/": true,
     // ".gitignore": true,
-    "events.py": true,
-    "*.log": true,
-    "experiments/": true
+    // "events.py": true,
+    // "*.log": true
+    // "experiments/": true
   }
 }
