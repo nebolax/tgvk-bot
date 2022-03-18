@@ -1,9 +1,9 @@
 import json
+from dotenv import dotenv_values
 
 base_tg_url = 'https://api.telegram.org/'
 base_vk_url = 'https://api.vk.com/method/'
-with open('json/confidential.json') as f:
-    bot_token = json.loads(f.read())['bot_token']
+bot_token = dotenv_values('.env')['BOT_TOKEN']
 
 welcome_message = '''
     Привет!

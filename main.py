@@ -2,7 +2,7 @@ import g
 import store
 import api
 
-#Обязательно импортить для регистрации путей ивентов
+# Обязательно импортить для регистрации путей ивентов
 import processing
 
 if __name__ == '__main__':
