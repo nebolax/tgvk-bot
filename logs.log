@@ -1,19 +1,13 @@
-2022-03-18 09:57:09,398-INFO:main.py.<module>.11 - App running...
-2022-03-18 09:57:11,418-INFO:events.py._event_proc.25 - Took 1.085331916809082 to process event
-2022-03-18 09:57:21,525-INFO:events.py._event_proc.25 - Took 0.5771782398223877 to process event
-2022-03-18 09:57:22,259-INFO:events.py._event_proc.25 - Took 0.6567933559417725 to process event
-2022-03-18 09:57:28,890-INFO:events.py._event_proc.25 - Took 0.0880429744720459 to process event
-2022-03-18 09:57:48,017-INFO:events.py._event_proc.25 - Took 1.4699287414550781 to process event
-2022-03-18 09:57:52,042-INFO:events.py._event_proc.25 - Took 1.4708962440490723 to process event
-2022-03-18 09:57:57,116-INFO:events.py._event_proc.25 - Took 0.6834650039672852 to process event
-2022-03-18 09:57:57,277-INFO:events.py._event_proc.25 - Took 0.11151289939880371 to process event
-2022-03-18 09:58:08,662-INFO:events.py._event_proc.25 - Took 0.08322739601135254 to process event
-2022-03-18 09:58:22,276-INFO:events.py._event_proc.25 - Took 0.09153342247009277 to process event
-2022-03-18 09:58:35,243-INFO:events.py._event_proc.25 - Took 0.6025791168212891 to process event
-2022-03-18 09:58:35,381-INFO:events.py._event_proc.25 - Took 0.07721471786499023 to process event
-2022-03-18 09:58:42,963-INFO:events.py._event_proc.25 - Took 0.10885167121887207 to process event
-2022-03-18 09:59:00,575-ERROR:network.py._vk_method.32 - Vk-method failed!! Response: {'error': {'error_code': 100, 'error_msg': 'One of the parameters specified was missing or invalid: message is empty or invalid', 'request_params': [{'key': 'v', 'value': '5.131'}, {'key': 'peer_id', 'value': '-141127580'}, {'key': 'random_id', 'value': '1256115250'}, {'key': 'method', 'value': 'messages.send'}, {'key': 'oauth', 'value': '1'}]}}
-2022-03-18 09:59:00,576-INFO:events.py._event_proc.25 - Took 0.5060453414916992 to process event
-2022-03-18 09:59:26,800-ERROR:network.py._vk_method.32 - Vk-method failed!! Response: {'error': {'error_code': 100, 'error_msg': 'One of the parameters specified was missing or invalid: message is empty or invalid', 'request_params': [{'key': 'v', 'value': '5.131'}, {'key': 'peer_id', 'value': '2000000173'}, {'key': 'random_id', 'value': '385498891'}, {'key': 'method', 'value': 'messages.send'}, {'key': 'oauth', 'value': '1'}]}}
-2022-03-18 09:59:26,800-INFO:events.py._event_proc.25 - Took 0.521202802658081 to process event
-2022-03-18 10:00:39,289-INFO:events.py._event_proc.25 - Took 0.0713346004486084 to process event
+2022-03-18 10:09:27,393-INFO:main.py.<module>.11 - App running...
+2022-03-18 10:09:40,425-INFO:events.py._event_proc.25 - Took 1.3337116241455078 to process event
+2022-03-18 10:09:45,392-INFO:events.py._event_proc.25 - Took 0.5694448947906494 to process event
+2022-03-18 10:09:46,158-INFO:events.py._event_proc.25 - Took 0.6571836471557617 to process event
+2022-03-18 10:09:59,630-INFO:events.py._event_proc.25 - Took 1.8428118228912354 to process event
+2022-03-18 10:10:03,676-INFO:events.py._event_proc.25 - Took 2.363158702850342 to process event
+2022-03-18 10:10:05,845-INFO:events.py._event_proc.25 - Took 0.604785680770874 to process event
+2022-03-18 10:10:06,037-INFO:events.py._event_proc.25 - Took 0.14484310150146484 to process event
+2022-03-18 10:10:13,406-INFO:events.py._event_proc.25 - Took 0.565183162689209 to process event
+2022-03-18 10:10:13,628-INFO:events.py._event_proc.25 - Took 0.1502699851989746 to process event
+2022-03-18 10:10:16,422-INFO:events.py._event_proc.25 - Took 0.8073511123657227 to process event
+2022-03-18 10:10:23,242-INFO:events.py._event_proc.25 - Took 0.5885236263275146 to process event
+2022-03-18 10:10:23,447-INFO:events.py._event_proc.25 - Took 0.15604686737060547 to process event
